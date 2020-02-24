@@ -74,10 +74,10 @@ if ( ! function_exists( 'jackro_sunshine_setup' ) ) :
 		 * @link https://codex.wordpress.org/Theme_Logo
 		 */
 		add_theme_support( 'custom-logo', array(
-			'height'      => 50,
-			'width'       => 50,
+			'height'      => 75,
+			'width'       => 75,
 			'flex-width'  => true,
-			'flex-height' => false,
+			'flex-height' => true,
 		) );
 	}
 endif;

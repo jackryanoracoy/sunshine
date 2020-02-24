@@ -4539,6 +4539,7 @@ pre {
 
 .c-site-branding-logo {
   display: block;
+  width: auto !important;
   max-width: 100%;
   max-height: calc(100% - 20px);
 }
