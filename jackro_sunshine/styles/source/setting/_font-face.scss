@@ -1,0 +1,40 @@
+// Sunshine
+// Scalable and Maintainable Architecture.
+//
+// Author:   Jack Ryan Oracoy
+// Website:  https://jackryanoracoy.github.io
+// Email:    jackryanoracoy@gmail.com
+// URL:      https://github.com/jackryanoracoy/sunshine
+// License:  https://github.com/jackryanoracoy/sunshine/blob/master/LICENSE.txt
+
+/*--------------------------------------------------------------
+ font-face
+--------------------------------------------------------------*/
+
+// Noto Sans
+@include font-face("Noto Sans", Noto-Sans, 400);
+@include font-face("Noto Sans", Noto-Sans-Bold, 700);
+
+// Noto Sans JP (Disabled)
+// @include font-face("Noto Sans JP", Noto-Sans-Japanese-Light, 300);
+// @include font-face("Noto Sans JP", Noto-Sans-Japanese, 400);
+// @include font-face("Noto Sans JP", Noto-Sans-Japanese-Bold, 700);
+
+// Noto Sans HK (Disabled)
+// @include font-face("Noto Sans HK", Noto-Sans-Hongkong-Light, 300);
+// @include font-face("Noto Sans HK", Noto-Sans-Hongkong, 400);
+// @include font-face("Noto Sans HK", Noto-Sans-Hongkong-Bold, 700);
+
+/*--------------------------------------------------------------
+ font-face Condensed
+--------------------------------------------------------------*/
+
+// Open Sans Condensed
+@include font-face("Open Sans Condensed", Open-Sans-Condensed-Light, 300);
+@include font-face("Open Sans Condensed", Open-Sans-Condensed-Bold, 700);
+
+// Roboto Condensed (Disabled)
+// @include font-face("Roboto Condensed", Roboto-Condensed-Light, 300);
+// @include font-face("Roboto Condensed", Roboto-Condensed, 400);
+// @include font-face("Roboto Condensed", Roboto-Condensed-Bold, 700);
+

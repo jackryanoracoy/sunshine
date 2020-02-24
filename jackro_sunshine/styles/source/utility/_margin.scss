@@ -1,0 +1,329 @@
+// Sunshine
+// Scalable and Maintainable Architecture.
+//
+// Author:   Jack Ryan Oracoy
+// Website:  https://jackryanoracoy.github.io
+// Email:    jackryanoracoy@gmail.com
+// URL:      https://github.com/jackryanoracoy/sunshine
+// License:  https://github.com/jackryanoracoy/sunshine/blob/master/LICENSE.txt
+
+/*--------------------------------------------------
+  Margin
+--------------------------------------------------*/
+
+.u-mar { margin: auto; }
+.u-mar-5 { margin: 5px; }
+.u-mar-10 { margin: 10px; }
+.u-mar-15 { margin: 15px; }
+.u-mar-20 { margin: 20px; }
+.u-mar-25 { margin: 25px; }
+.u-mar-30 { margin: 30px; }
+.u-mar-35 { margin: 35px; }
+.u-mar-40 { margin: 40px; }
+.u-mar-45 { margin: 45px; }
+.u-mar-50 { margin: 50px; }
+.u-mar-55 { margin: 55px; }
+.u-mar-60 { margin: 60px; }
+.u-mar-65 { margin: 65px; }
+.u-mar-70 { margin: 70px; }
+.u-mar-75 { margin: 75px; }
+.u-mar-80 { margin: 80px; }
+.u-mar-85 { margin: 85px; }
+.u-mar-90 { margin: 90px; }
+.u-mar-95 { margin: 95px; }
+.u-mar-100 { margin: 100px; }
+
+.u-mar-top { margin-top: auto; }
+.u-mar-top-5 { margin-top: 5px; }
+.u-mar-top-10 { margin-top: 10px; }
+.u-mar-top-15 { margin-top: 15px; }
+.u-mar-top-20 { margin-top: 20px; }
+.u-mar-top-25 { margin-top: 25px; }
+.u-mar-top-30 { margin-top: 30px; }
+.u-mar-top-35 { margin-top: 35px; }
+.u-mar-top-40 { margin-top: 40px; }
+.u-mar-top-45 { margin-top: 45px; }
+.u-mar-top-50 { margin-top: 50px; }
+.u-mar-top-55 { margin-top: 55px; }
+.u-mar-top-60 { margin-top: 60px; }
+.u-mar-top-65 { margin-top: 65px; }
+.u-mar-top-70 { margin-top: 70px; }
+.u-mar-top-75 { margin-top: 75px; }
+.u-mar-top-80 { margin-top: 80px; }
+.u-mar-top-85 { margin-top: 85px; }
+.u-mar-top-90 { margin-top: 90px; }
+.u-mar-top-95 { margin-top: 95px; }
+.u-mar-top-100 { margin-top: 100px; }
+
+.u-mar-right { margin-right: auto; }
+.u-mar-right-5 { margin-right: 5px; }
+.u-mar-right-10 { margin-right: 10px; }
+.u-mar-right-15 { margin-right: 15px; }
+.u-mar-right-20 { margin-right: 20px; }
+.u-mar-right-25 { margin-right: 25px; }
+.u-mar-right-30 { margin-right: 30px; }
+.u-mar-right-35 { margin-right: 35px; }
+.u-mar-right-40 { margin-right: 40px; }
+.u-mar-right-45 { margin-right: 45px; }
+.u-mar-right-50 { margin-right: 50px; }
+.u-mar-right-55 { margin-right: 55px; }
+.u-mar-right-60 { margin-right: 60px; }
+.u-mar-right-65 { margin-right: 65px; }
+.u-mar-right-70 { margin-right: 70px; }
+.u-mar-right-75 { margin-right: 75px; }
+.u-mar-right-80 { margin-right: 80px; }
+.u-mar-right-85 { margin-right: 85px; }
+.u-mar-right-90 { margin-right: 90px; }
+.u-mar-right-95 { margin-right: 95px; }
+.u-mar-right-100 { margin-right: 100px; }
+
+.u-mar-bottom { margin-bottom: auto; }
+.u-mar-bottom-5 { margin-bottom: 5px; }
+.u-mar-bottom-10 { margin-bottom: 10px; }
+.u-mar-bottom-15 { margin-bottom: 15px; }
+.u-mar-bottom-20 { margin-bottom: 20px; }
+.u-mar-bottom-25 { margin-bottom: 25px; }
+.u-mar-bottom-30 { margin-bottom: 30px; }
+.u-mar-bottom-35 { margin-bottom: 35px; }
+.u-mar-bottom-40 { margin-bottom: 40px; }
+.u-mar-bottom-45 { margin-bottom: 45px; }
+.u-mar-bottom-50 { margin-bottom: 50px; }
+.u-mar-bottom-55 { margin-bottom: 55px; }
+.u-mar-bottom-60 { margin-bottom: 60px; }
+.u-mar-bottom-65 { margin-bottom: 65px; }
+.u-mar-bottom-70 { margin-bottom: 70px; }
+.u-mar-bottom-75 { margin-bottom: 75px; }
+.u-mar-bottom-80 { margin-bottom: 80px; }
+.u-mar-bottom-85 { margin-bottom: 85px; }
+.u-mar-bottom-90 { margin-bottom: 90px; }
+.u-mar-bottom-95 { margin-bottom: 95px; }
+.u-mar-bottom-100 { margin-bottom: 100px; }
+
+.u-mar-left { margin-left: auto; }
+.u-mar-left-5 { margin-left: 5px; }
+.u-mar-left-10 { margin-left: 10px; }
+.u-mar-left-15 { margin-left: 15px; }
+.u-mar-left-20 { margin-left: 20px; }
+.u-mar-left-25 { margin-left: 25px; }
+.u-mar-left-30 { margin-left: 30px; }
+.u-mar-left-35 { margin-left: 35px; }
+.u-mar-left-40 { margin-left: 40px; }
+.u-mar-left-45 { margin-left: 45px; }
+.u-mar-left-50 { margin-left: 50px; }
+.u-mar-left-55 { margin-left: 55px; }
+.u-mar-left-60 { margin-left: 60px; }
+.u-mar-left-65 { margin-left: 65px; }
+.u-mar-left-70 { margin-left: 70px; }
+.u-mar-left-75 { margin-left: 75px; }
+.u-mar-left-80 { margin-left: 80px; }
+.u-mar-left-85 { margin-left: 85px; }
+.u-mar-left-90 { margin-left: 90px; }
+.u-mar-left-95 { margin-left: 95px; }
+.u-mar-left-100 { margin-left: 100px; }
+
+.u-mar-ver { margin-top: auto; margin-bottom: auto; }
+.u-mar-ver-5 { margin-top: 5px; margin-bottom: 5px; }
+.u-mar-ver-10 { margin-top: 10px; margin-bottom: 10px; }
+.u-mar-ver-15 { margin-top: 15px; margin-bottom: 15px; }
+.u-mar-ver-20 { margin-top: 20px; margin-bottom: 20px; }
+.u-mar-ver-25 { margin-top: 25px; margin-bottom: 25px; }
+.u-mar-ver-30 { margin-top: 30px; margin-bottom: 30px; }
+.u-mar-ver-35 { margin-top: 35px; margin-bottom: 35px; }
+.u-mar-ver-40 { margin-top: 40px; margin-bottom: 40px; }
+.u-mar-ver-45 { margin-top: 45px; margin-bottom: 45px; }
+.u-mar-ver-50 { margin-top: 50px; margin-bottom: 50px; }
+.u-mar-ver-55 { margin-top: 55px; margin-bottom: 55px; }
+.u-mar-ver-60 { margin-top: 60px; margin-bottom: 60px; }
+.u-mar-ver-65 { margin-top: 65px; margin-bottom: 65px; }
+.u-mar-ver-70 { margin-top: 70px; margin-bottom: 70px; }
+.u-mar-ver-75 { margin-top: 75px; margin-bottom: 75px; }
+.u-mar-ver-80 { margin-top: 80px; margin-bottom: 80px; }
+.u-mar-ver-85 { margin-top: 85px; margin-bottom: 85px; }
+.u-mar-ver-90 { margin-top: 90px; margin-bottom: 90px; }
+.u-mar-ver-95 { margin-top: 95px; margin-bottom: 95px; }
+.u-mar-ver-100 { margin-top: 100px; margin-bottom: 100px; }
+
+.u-mar-hor { margin-right: auto; margin-left: auto; }
+.u-mar-hor-5 { margin-right: 5px; margin-left: 5px; }
+.u-mar-hor-10 { margin-right: 10px; margin-left: 10px; }
+.u-mar-hor-15 { margin-right: 15px; margin-left: 15px; }
+.u-mar-hor-20 { margin-right: 20px; margin-left: 20px; }
+.u-mar-hor-25 { margin-right: 25px; margin-left: 25px; }
+.u-mar-hor-30 { margin-right: 30px; margin-left: 30px; }
+.u-mar-hor-35 { margin-right: 35px; margin-left: 35px; }
+.u-mar-hor-40 { margin-right: 40px; margin-left: 40px; }
+.u-mar-hor-45 { margin-right: 45px; margin-left: 45px; }
+.u-mar-hor-50 { margin-right: 50px; margin-left: 50px; }
+.u-mar-hor-55 { margin-right: 55px; margin-left: 55px; }
+.u-mar-hor-60 { margin-right: 60px; margin-left: 60px; }
+.u-mar-hor-65 { margin-right: 65px; margin-left: 65px; }
+.u-mar-hor-70 { margin-right: 70px; margin-left: 70px; }
+.u-mar-hor-75 { margin-right: 75px; margin-left: 75px; }
+.u-mar-hor-80 { margin-right: 80px; margin-left: 80px; }
+.u-mar-hor-85 { margin-right: 85px; margin-left: 85px; }
+.u-mar-hor-90 { margin-right: 90px; margin-left: 90px; }
+.u-mar-hor-95 { margin-right: 95px; margin-left: 95px; }
+.u-mar-hor-100 { margin-right: 100px; margin-left: 100px; }
+
+@each $breakpoint in map-keys($breakpoints) {
+  @include media-breakpoint-min($breakpoint) {
+    .u-mar-#{$breakpoint} { margin: auto; }
+    .u-mar-#{$breakpoint}-0 { margin: 0; }
+    .u-mar-#{$breakpoint}-5 { margin: 5px; }
+    .u-mar-#{$breakpoint}-10 { margin: 10px; }
+    .u-mar-#{$breakpoint}-15 { margin: 15px; }
+    .u-mar-#{$breakpoint}-20 { margin: 20px; }
+    .u-mar-#{$breakpoint}-25 { margin: 25px; }
+    .u-mar-#{$breakpoint}-30 { margin: 30px; }
+    .u-mar-#{$breakpoint}-35 { margin: 35px; }
+    .u-mar-#{$breakpoint}-40 { margin: 40px; }
+    .u-mar-#{$breakpoint}-45 { margin: 45px; }
+    .u-mar-#{$breakpoint}-50 { margin: 50px; }
+    .u-mar-#{$breakpoint}-55 { margin: 55px; }
+    .u-mar-#{$breakpoint}-60 { margin: 60px; }
+    .u-mar-#{$breakpoint}-65 { margin: 65px; }
+    .u-mar-#{$breakpoint}-70 { margin: 70px; }
+    .u-mar-#{$breakpoint}-75 { margin: 75px; }
+    .u-mar-#{$breakpoint}-80 { margin: 80px; }
+    .u-mar-#{$breakpoint}-85 { margin: 85px; }
+    .u-mar-#{$breakpoint}-90 { margin: 90px; }
+    .u-mar-#{$breakpoint}-95 { margin: 95px; }
+    .u-mar-#{$breakpoint}-100 { margin: 100px; }
+
+    .u-mar-top-#{$breakpoint} { margin-top: auto; }
+    .u-mar-top-#{$breakpoint}-0 { margin-top: 0; }
+    .u-mar-top-#{$breakpoint}-5 { margin-top: 5px; }
+    .u-mar-top-#{$breakpoint}-10 { margin-top: 10px; }
+    .u-mar-top-#{$breakpoint}-15 { margin-top: 15px; }
+    .u-mar-top-#{$breakpoint}-20 { margin-top: 20px; }
+    .u-mar-top-#{$breakpoint}-25 { margin-top: 25px; }
+    .u-mar-top-#{$breakpoint}-30 { margin-top: 30px; }
+    .u-mar-top-#{$breakpoint}-35 { margin-top: 35px; }
+    .u-mar-top-#{$breakpoint}-40 { margin-top: 40px; }
+    .u-mar-top-#{$breakpoint}-45 { margin-top: 45px; }
+    .u-mar-top-#{$breakpoint}-50 { margin-top: 50px; }
+    .u-mar-top-#{$breakpoint}-55 { margin-top: 55px; }
+    .u-mar-top-#{$breakpoint}-60 { margin-top: 60px; }
+    .u-mar-top-#{$breakpoint}-65 { margin-top: 65px; }
+    .u-mar-top-#{$breakpoint}-70 { margin-top: 70px; }
+    .u-mar-top-#{$breakpoint}-75 { margin-top: 75px; }
+    .u-mar-top-#{$breakpoint}-80 { margin-top: 80px; }
+    .u-mar-top-#{$breakpoint}-85 { margin-top: 85px; }
+    .u-mar-top-#{$breakpoint}-90 { margin-top: 90px; }
+    .u-mar-top-#{$breakpoint}-95 { margin-top: 95px; }
+    .u-mar-top-#{$breakpoint}-100 { margin-top: 100px; }
+
+    .u-mar-right-#{$breakpoint} { margin-right: auto; }
+    .u-mar-right-#{$breakpoint}-0 { margin-right: 0; }
+    .u-mar-right-#{$breakpoint}-5 { margin-right: 5px; }
+    .u-mar-right-#{$breakpoint}-10 { margin-right: 10px; }
+    .u-mar-right-#{$breakpoint}-15 { margin-right: 15px; }
+    .u-mar-right-#{$breakpoint}-20 { margin-right: 20px; }
+    .u-mar-right-#{$breakpoint}-25 { margin-right: 25px; }
+    .u-mar-right-#{$breakpoint}-30 { margin-right: 30px; }
+    .u-mar-right-#{$breakpoint}-35 { margin-right: 35px; }
+    .u-mar-right-#{$breakpoint}-40 { margin-right: 40px; }
+    .u-mar-right-#{$breakpoint}-45 { margin-right: 45px; }
+    .u-mar-right-#{$breakpoint}-50 { margin-right: 50px; }
+    .u-mar-right-#{$breakpoint}-55 { margin-right: 55px; }
+    .u-mar-right-#{$breakpoint}-60 { margin-right: 60px; }
+    .u-mar-right-#{$breakpoint}-65 { margin-right: 65px; }
+    .u-mar-right-#{$breakpoint}-70 { margin-right: 70px; }
+    .u-mar-right-#{$breakpoint}-75 { margin-right: 75px; }
+    .u-mar-right-#{$breakpoint}-80 { margin-right: 80px; }
+    .u-mar-right-#{$breakpoint}-85 { margin-right: 85px; }
+    .u-mar-right-#{$breakpoint}-90 { margin-right: 90px; }
+    .u-mar-right-#{$breakpoint}-95 { margin-right: 95px; }
+    .u-mar-right-#{$breakpoint}-100 { margin-right: 100px; }
+
+    .u-mar-bottom-#{$breakpoint} { margin-bottom: auto; }
+    .u-mar-bottom-#{$breakpoint}-0 { margin-bottom: 0; }
+    .u-mar-bottom-#{$breakpoint}-5 { margin-bottom: 5px; }
+    .u-mar-bottom-#{$breakpoint}-10 { margin-bottom: 10px; }
+    .u-mar-bottom-#{$breakpoint}-15 { margin-bottom: 15px; }
+    .u-mar-bottom-#{$breakpoint}-20 { margin-bottom: 20px; }
+    .u-mar-bottom-#{$breakpoint}-25 { margin-bottom: 25px; }
+    .u-mar-bottom-#{$breakpoint}-30 { margin-bottom: 30px; }
+    .u-mar-bottom-#{$breakpoint}-35 { margin-bottom: 35px; }
+    .u-mar-bottom-#{$breakpoint}-40 { margin-bottom: 40px; }
+    .u-mar-bottom-#{$breakpoint}-45 { margin-bottom: 45px; }
+    .u-mar-bottom-#{$breakpoint}-50 { margin-bottom: 50px; }
+    .u-mar-bottom-#{$breakpoint}-55 { margin-bottom: 55px; }
+    .u-mar-bottom-#{$breakpoint}-60 { margin-bottom: 60px; }
+    .u-mar-bottom-#{$breakpoint}-65 { margin-bottom: 65px; }
+    .u-mar-bottom-#{$breakpoint}-70 { margin-bottom: 70px; }
+    .u-mar-bottom-#{$breakpoint}-75 { margin-bottom: 75px; }
+    .u-mar-bottom-#{$breakpoint}-80 { margin-bottom: 80px; }
+    .u-mar-bottom-#{$breakpoint}-85 { margin-bottom: 85px; }
+    .u-mar-bottom-#{$breakpoint}-90 { margin-bottom: 90px; }
+    .u-mar-bottom-#{$breakpoint}-95 { margin-bottom: 95px; }
+    .u-mar-bottom-#{$breakpoint}-100 { margin-bottom: 100px; }
+
+    .u-mar-left-#{$breakpoint} { margin-left: auto; }
+    .u-mar-left-#{$breakpoint}-0 { margin-left: 0; }
+    .u-mar-left-#{$breakpoint}-5 { margin-left: 5px; }
+    .u-mar-left-#{$breakpoint}-10 { margin-left: 10px; }
+    .u-mar-left-#{$breakpoint}-15 { margin-left: 15px; }
+    .u-mar-left-#{$breakpoint}-20 { margin-left: 20px; }
+    .u-mar-left-#{$breakpoint}-25 { margin-left: 25px; }
+    .u-mar-left-#{$breakpoint}-30 { margin-left: 30px; }
+    .u-mar-left-#{$breakpoint}-35 { margin-left: 35px; }
+    .u-mar-left-#{$breakpoint}-40 { margin-left: 40px; }
+    .u-mar-left-#{$breakpoint}-45 { margin-left: 45px; }
+    .u-mar-left-#{$breakpoint}-50 { margin-left: 50px; }
+    .u-mar-left-#{$breakpoint}-55 { margin-left: 55px; }
+    .u-mar-left-#{$breakpoint}-60 { margin-left: 60px; }
+    .u-mar-left-#{$breakpoint}-65 { margin-left: 65px; }
+    .u-mar-left-#{$breakpoint}-70 { margin-left: 70px; }
+    .u-mar-left-#{$breakpoint}-75 { margin-left: 75px; }
+    .u-mar-left-#{$breakpoint}-80 { margin-left: 80px; }
+    .u-mar-left-#{$breakpoint}-85 { margin-left: 85px; }
+    .u-mar-left-#{$breakpoint}-90 { margin-left: 90px; }
+    .u-mar-left-#{$breakpoint}-95 { margin-left: 95px; }
+    .u-mar-left-#{$breakpoint}-100 { margin-left: 100px; }
+
+    .u-mar-ver-#{$breakpoint} { margin-top: auto; margin-bottom: auto; }
+    .u-mar-ver-#{$breakpoint}-5 { margin-top: 5px; margin-bottom: 5px; }
+    .u-mar-ver-#{$breakpoint}-10 { margin-top: 10px; margin-bottom: 10px; }
+    .u-mar-ver-#{$breakpoint}-15 { margin-top: 15px; margin-bottom: 15px; }
+    .u-mar-ver-#{$breakpoint}-20 { margin-top: 20px; margin-bottom: 20px; }
+    .u-mar-ver-#{$breakpoint}-25 { margin-top: 25px; margin-bottom: 25px; }
+    .u-mar-ver-#{$breakpoint}-30 { margin-top: 30px; margin-bottom: 30px; }
+    .u-mar-ver-#{$breakpoint}-35 { margin-top: 35px; margin-bottom: 35px; }
+    .u-mar-ver-#{$breakpoint}-40 { margin-top: 40px; margin-bottom: 40px; }
+    .u-mar-ver-#{$breakpoint}-45 { margin-top: 45px; margin-bottom: 45px; }
+    .u-mar-ver-#{$breakpoint}-50 { margin-top: 50px; margin-bottom: 50px; }
+    .u-mar-ver-#{$breakpoint}-55 { margin-top: 55px; margin-bottom: 55px; }
+    .u-mar-ver-#{$breakpoint}-60 { margin-top: 60px; margin-bottom: 60px; }
+    .u-mar-ver-#{$breakpoint}-65 { margin-top: 65px; margin-bottom: 65px; }
+    .u-mar-ver-#{$breakpoint}-70 { margin-top: 70px; margin-bottom: 70px; }
+    .u-mar-ver-#{$breakpoint}-75 { margin-top: 75px; margin-bottom: 75px; }
+    .u-mar-ver-#{$breakpoint}-80 { margin-top: 80px; margin-bottom: 80px; }
+    .u-mar-ver-#{$breakpoint}-85 { margin-top: 85px; margin-bottom: 85px; }
+    .u-mar-ver-#{$breakpoint}-90 { margin-top: 90px; margin-bottom: 90px; }
+    .u-mar-ver-#{$breakpoint}-95 { margin-top: 95px; margin-bottom: 95px; }
+    .u-mar-ver-#{$breakpoint}-100 { margin-top: 100px; margin-bottom: 100px; }
+
+    .u-mar-hor-#{$breakpoint} { margin-right: auto; margin-left: auto; }
+    .u-mar-hor-#{$breakpoint}-5 { margin-right: 5px; margin-left: 5px; }
+    .u-mar-hor-#{$breakpoint}-10 { margin-right: 10px; margin-left: 10px; }
+    .u-mar-hor-#{$breakpoint}-15 { margin-right: 15px; margin-left: 15px; }
+    .u-mar-hor-#{$breakpoint}-20 { margin-right: 20px; margin-left: 20px; }
+    .u-mar-hor-#{$breakpoint}-25 { margin-right: 25px; margin-left: 25px; }
+    .u-mar-hor-#{$breakpoint}-30 { margin-right: 30px; margin-left: 30px; }
+    .u-mar-hor-#{$breakpoint}-35 { margin-right: 35px; margin-left: 35px; }
+    .u-mar-hor-#{$breakpoint}-40 { margin-right: 40px; margin-left: 40px; }
+    .u-mar-hor-#{$breakpoint}-45 { margin-right: 45px; margin-left: 45px; }
+    .u-mar-hor-#{$breakpoint}-50 { margin-right: 50px; margin-left: 50px; }
+    .u-mar-hor-#{$breakpoint}-55 { margin-right: 55px; margin-left: 55px; }
+    .u-mar-hor-#{$breakpoint}-60 { margin-right: 60px; margin-left: 60px; }
+    .u-mar-hor-#{$breakpoint}-65 { margin-right: 65px; margin-left: 65px; }
+    .u-mar-hor-#{$breakpoint}-70 { margin-right: 70px; margin-left: 70px; }
+    .u-mar-hor-#{$breakpoint}-75 { margin-right: 75px; margin-left: 75px; }
+    .u-mar-hor-#{$breakpoint}-80 { margin-right: 80px; margin-left: 80px; }
+    .u-mar-hor-#{$breakpoint}-85 { margin-right: 85px; margin-left: 85px; }
+    .u-mar-hor-#{$breakpoint}-90 { margin-right: 90px; margin-left: 90px; }
+    .u-mar-hor-#{$breakpoint}-95 { margin-right: 95px; margin-left: 95px; }
+    .u-mar-hor-#{$breakpoint}-100 { margin-right: 100px; margin-left: 100px; }
+  }
+}

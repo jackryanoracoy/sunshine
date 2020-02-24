@@ -1,0 +1,57 @@
+// Sunshine
+// Scalable and Maintainable Architecture.
+//
+// Author:   Jack Ryan Oracoy
+// Website:  https://jackryanoracoy.github.io
+// Email:    jackryanoracoy@gmail.com
+// URL:      https://github.com/jackryanoracoy/sunshine
+// License:  https://github.com/jackryanoracoy/sunshine/blob/master/LICENSE.txt
+
+/*--------------------------------------------------
+  Site-menu
+--------------------------------------------------*/
+
+.c-site-menu {
+  position: relative;
+  display: block;
+  color: $light;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+
+  &-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+  }
+
+  &-inner {
+    position: relative;
+    display: block;
+    width: inherit;
+    height: 4px;
+    background-color: $light;
+  }
+
+  &-inner::after,
+  &-inner::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: $light;
+    transition: all 200ms ease-in-out;
+  }
+
+  &-text { margin: 4px 0 0; }
+  &-inner::before { top: -10px; }
+  &-inner::after { bottom: -10px; }
+
+  &.js-active &-inner { background-color: rgba(0, 0, 0, 0); }
+  &.js-active &-inner::before { top: 0; transform: rotate(-40deg); }
+  &.js-active &-inner::after { bottom: 0; transform: rotate(40deg); }
+}
+

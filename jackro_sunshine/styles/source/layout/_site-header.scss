@@ -1,0 +1,104 @@
+// Sunshine
+// Scalable and Maintainable Architecture.
+//
+// Author:   Jack Ryan Oracoy
+// Website:  https://jackryanoracoy.github.io
+// Email:    jackryanoracoy@gmail.com
+// URL:      https://github.com/jackryanoracoy/sunshine
+// License:  https://github.com/jackryanoracoy/sunshine/blob/master/LICENSE.txt
+
+/*--------------------------------------------------
+  Site-header
+--------------------------------------------------*/
+
+.l-site-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-width: 240px;
+  z-index: 9;
+
+  &,
+  &.js-active.js-show,
+  &.js-active.js-menu-opened {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  &.js-active {
+    top: -$header-height_m;
+    transition: $transition;
+  }
+
+  &.js-active.js-show,
+  &.js-menu-opened {
+    top: 0 !important;
+  }
+
+  &-content {
+    padding: 0 10px;
+
+    &:first-child { height: $header-height_m; }
+  }
+
+  &-menu {
+    max-width: 50px;
+  }
+
+  &-branding {
+    max-width: calc(100% - 50px);
+  }
+
+  &-navigation {
+    max-width: 100%;
+    max-height: 0;
+    transition: $transition;
+    overflow: hidden;
+  }
+
+  &-navigation.js-show { max-height: 100vh; }
+
+  @include media-breakpoint-min(lg) {
+    &.js-active {
+      top: -$header-height;
+    }
+
+    &-content {
+      padding: 0 20px;
+    }
+
+    &-content:first-child {
+      height: $header-height;
+    }
+
+    &-branding,
+    &-action {
+      width: auto;
+      max-width: 50%;
+    }
+
+    &-branding {
+      width: auto;
+    }
+
+    &-navigation {
+      max-height: 100vh;
+    }
+  }
+
+  @include media-breakpoint-max(lg) {
+    &.js-active {
+      box-shadow: none;
+    }
+
+    &-action {
+      position: fixed;
+      right: 10px;
+      bottom: 10px;
+    }
+  }
+
+  @media print {
+    position: absolute;
+    &-action { display: none; }
+  }
+}

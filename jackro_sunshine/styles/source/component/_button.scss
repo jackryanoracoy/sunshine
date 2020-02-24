@@ -1,0 +1,78 @@
+// Sunshine
+// Scalable and Maintainable Architecture.
+//
+// Author:   Jack Ryan Oracoy
+// Website:  https://jackryanoracoy.github.io
+// Email:    jackryanoracoy@gmail.com
+// URL:      https://github.com/jackryanoracoy/sunshine
+// License:  https://github.com/jackryanoracoy/sunshine/blob/master/LICENSE.txt
+
+/*--------------------------------------------------
+  Button
+--------------------------------------------------*/
+
+.c-button {
+  display: inline-block;
+  min-width: $button-height;
+  padding: 0 15px;
+  color: $light !important;
+  font-size: $font-nm;
+  line-height: $button-height;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: $button-height / 2;
+  background-color: $primary;
+  box-shadow: $z-depth-1;
+  white-space: nowrap;
+
+  &:hover,
+  &:visited,
+  &:active,
+  &:focus {
+    text-decoration: none;
+  }
+
+  &:hover {
+    box-shadow: $z-depth-2;
+  }
+
+  &.is-block { display: block; }
+
+  &.is-large {
+    min-width: $button-height-lg;
+    line-height: $button-height-lg;
+    border-radius: $button-height-lg / 2;
+    padding: 0 20px;
+  }
+
+  &.is-light {
+    color: $dark !important;
+    background-color: $light;
+  }
+
+  &.is-dark {
+    color: $light !important;
+    background-color: $dark;
+  }
+
+  &.is-success {
+    color: $light !important;
+    background-color: $success;
+  }
+
+  &.is-warnig {
+    color: $light !important;
+    background-color: $warning;
+  }
+
+  &.is-danger {
+    color: $light!important;
+    background-color: $danger;
+  }
+
+  &.is-info {
+    color: $light !important;
+    background-color: $info;
+  }
+}

@@ -1,0 +1,229 @@
+// Sunshine
+// Scalable and Maintainable Architecture.
+//
+// Author:   Jack Ryan Oracoy
+// Website:  https://jackryanoracoy.github.io
+// Email:    jackryanoracoy@gmail.com
+// URL:      https://github.com/jackryanoracoy/sunshine
+// License:  https://github.com/jackryanoracoy/sunshine/blob/master/LICENSE.txt
+
+/*--------------------------------------------------
+  Flex
+--------------------------------------------------*/
+
+.l-flex {
+  display: flex;
+  flex-wrap: wrap;
+
+  &.is-row-wrp { flex-flow: row wrap; }
+  &.is-row-wrp-no { flex-flow: row nowrap; }
+  &.is-row-wrp-rev { flex-flow: row wrap-reverse; }
+  &.is-row-rev-wrp { flex-flow: row-reverse wrap; }
+  &.is-row-rev-wrp-no { flex-flow: row-reverse nowrap; }
+  &.is-row-rev-wrp-rev { flex-flow: row-reverse wrap-reverse; }
+
+  &.is-col-wrp { flex-flow: column wrap; }
+  &.is-col-wrp-no { flex-flow: column nowrap; }
+  &.is-col-wrp-rev { flex-flow: column wrap-reverse; }
+  &.is-col-rev-wrp { flex-flow: column-reverse wrap; }
+  &.is-col-rev-wrp-no { flex-flow: column-reverse nowrap; }
+  &.is-col-rev-wrp-rev { flex-flow: column-reverse wrap-reverse; }
+
+  &.is-wrp { flex-wrap: wrap; }
+  &.is-wrp-no { flex-wrap: nowrap; }
+  &.is-wrp-rev { flex-wrap: wrap-reverse; }
+
+  &.is-col { flex-direction: column; }
+  &.is-col-rev { flex-direction: column-reverse; }
+
+  &.is-row { flex-direction: row; }
+  &.is-row-rev { flex-direction: row-reverse; }
+
+  &.is-jus-start { justify-content: flex-start; }
+  &.is-jus-end { justify-content: flex-end; }
+  &.is-jus-center { justify-content: center; }
+  &.is-jus-sparound { justify-content: space-around; }
+  &.is-jus-spbetween { justify-content: space-between; }
+  &.is-jus-spevenly { justify-content: space-evenly; }
+
+  &.is-ali-start { align-content: flex-start; }
+  &.is-ali-end { align-content: flex-end; }
+  &.is-ali-center { align-content: center; }
+  &.is-ali-stretch { align-content: stretch; }
+  &.is-ali-sparound { align-content: space-around; }
+  &.is-ali-spbetween { align-content: space-between; }
+
+  &.is-alt-start { align-items: flex-start; }
+  &.is-alt-end { align-items: flex-end; }
+  &.is-alt-center { align-items: center; }
+  &.is-alt-stretch { align-items: stretch; }
+  &.is-alt-baseline { align-items: baseline; }
+
+  &-order-1 { order: 1; }
+  &-order-2 { order: 2; }
+  &-order-3 { order: 3; }
+  &-order-4 { order: 4; }
+  &-order-5 { order: 5; }
+  &-order-6 { order: 6; }
+  &-order-7 { order: 7; }
+  &-order-8 { order: 8; }
+  &-order-9 { order: 9; }
+  &-order-10 { order: 10; }
+  &-order-11 { order: 11; }
+  &-order-12 { order: 12; }
+
+  &-als-start { align-self: flex-start; }
+  &-als-end { align-self: flex-end; }
+  &-als-center { align-self: center; }
+  &-als-stretch { align-self: stretch; }
+  &-als-baseline { align-self: baseline; }
+
+  &-item { @include flex-col-width-auto(); }
+  &-item-1 { @include flex-col-width(1); }
+  &-item-2 { @include flex-col-width(2); }
+  &-item-3 { @include flex-col-width(3); }
+  &-item-4 { @include flex-col-width(4); }
+  &-item-5 { @include flex-col-width(5); }
+  &-item-6 { @include flex-col-width(6); }
+  &-item-7 { @include flex-col-width(7); }
+  &-item-8 { @include flex-col-width(8); }
+  &-item-9 { @include flex-col-width(9); }
+  &-item-10 { @include flex-col-width(10); }
+  &-item-11 { @include flex-col-width(11); }
+  &-item-12 { @include flex-col-width(12); }
+
+  &-item-a { @include flex-col-width-alt(1); }
+  &-item-b { @include flex-col-width-alt(2); }
+  &-item-c { @include flex-col-width-alt(3); }
+  &-item-d { @include flex-col-width-alt(4); }
+  &-item-e { @include flex-col-width-alt(6); }
+  &-item-f { @include flex-col-width-alt(7); }
+  &-item-g { @include flex-col-width-alt(8); }
+  &-item-h { @include flex-col-width-alt(9); }
+
+  &-basis-1 { @include basis-col-width(1); }
+  &-basis-2 { @include basis-col-width(2); }
+  &-basis-3 { @include basis-col-width(3); }
+  &-basis-4 { @include basis-col-width(4); }
+  &-basis-5 { @include basis-col-width(5); }
+  &-basis-6 { @include basis-col-width(6); }
+  &-basis-7 { @include basis-col-width(7); }
+  &-basis-8 { @include basis-col-width(8); }
+  &-basis-9 { @include basis-col-width(9); }
+  &-basis-10 { @include basis-col-width(10); }
+  &-basis-11 { @include basis-col-width(11); }
+  &-basis-12 { @include basis-col-width(12); }
+
+  &-grow { flex-grow: 1; }
+  &-grow-no { flex-grow: 0; }
+  &-shrink { flex-shrink: 1; }
+  &-shrink-no { flex-shrink: 0; }
+
+  @each $breakpoint in map-keys($breakpoints) {
+    @include media-breakpoint-min($breakpoint) {
+      &.is-row-wrp-#{$breakpoint} { flex-flow: row wrap; }
+      &.is-row-wrp-no-#{$breakpoint} { flex-flow: row nowrap; }
+      &.is-row-wrp-rev-#{$breakpoint} { flex-flow: row wrap-reverse; }
+      &.is-row-rev-wrp-#{$breakpoint} { flex-flow: row-reverse wrap; }
+      &.is-row-rev-wrp-no-#{$breakpoint} { flex-flow: row-reverse nowrap; }
+      &.is-row-rev-wrp-rev-#{$breakpoint} { flex-flow: row-reverse wrap-reverse; }
+
+      &.is-col-wrp-#{$breakpoint} { flex-flow: column wrap; }
+      &.is-col-wrp-no-#{$breakpoint} { flex-flow: column nowrap; }
+      &.is-col-wrp-rev-#{$breakpoint} { flex-flow: column wrap-reverse; }
+      &.is-col-rev-wrp-#{$breakpoint} { flex-flow: column-reverse wrap; }
+      &.is-col-rev-wrp-no-#{$breakpoint} { flex-flow: column-reverse nowrap; }
+      &.is-col-rev-wrp-rev-#{$breakpoint} { flex-flow: column-reverse wrap-reverse; }
+
+      &.is-wrp-#{$breakpoint} { flex-wrap: wrap; }
+      &.is-wrp-no-#{$breakpoint} { flex-wrap: nowrap; }
+      &.is-wrp-rev-#{$breakpoint} { flex-wrap: wrap-reverse; }
+
+      &.is-col-#{$breakpoint} { flex-direction: column; }
+      &.is-col-rev-#{$breakpoint} { flex-direction: column-reverse; }
+
+      &.is-row-#{$breakpoint} { flex-direction: row; }
+      &.is-row-rev-#{$breakpoint} { flex-direction: row-reverse; }
+
+      &.is-jus-start-#{$breakpoint} { justify-content: flex-start; }
+      &.is-jus-end-#{$breakpoint} { justify-content: flex-end; }
+      &.is-jus-center-#{$breakpoint} { justify-content: center; }
+      &.is-jus-sparound-#{$breakpoint} { justify-content: space-around; }
+      &.is-jus-spbetween-#{$breakpoint} { justify-content: space-between; }
+      &.is-jus-spevenly-#{$breakpoint} { justify-content: space-evenly; }
+
+      &.is-ali-start-#{$breakpoint} { align-content: flex-start; }
+      &.is-ali-end-#{$breakpoint} { align-content: flex-end; }
+      &.is-ali-center-#{$breakpoint} { align-content: center; }
+      &.is-ali-stretch-#{$breakpoint} { align-content: stretch; }
+      &.is-ali-sparound-#{$breakpoint} { align-content: space-around; }
+      &.is-ali-spbetween-#{$breakpoint} { align-content: space-between; }
+
+      &.is-alt-start-#{$breakpoint} { align-items: flex-start; }
+      &.is-alt-end-#{$breakpoint} { align-items: flex-end; }
+      &.is-alt-center-#{$breakpoint} { align-items: center; }
+      &.is-alt-stretch-#{$breakpoint} { align-items: stretch; }
+      &.is-alt-baseline-#{$breakpoint} { align-items: baseline; }
+
+      &-order-#{$breakpoint}-1 { order: 1; }
+      &-order-#{$breakpoint}-2 { order: 2; }
+      &-order-#{$breakpoint}-3 { order: 3; }
+      &-order-#{$breakpoint}-4 { order: 4; }
+      &-order-#{$breakpoint}-5 { order: 5; }
+      &-order-#{$breakpoint}-6 { order: 6; }
+      &-order-#{$breakpoint}-7 { order: 7; }
+      &-order-#{$breakpoint}-8 { order: 8; }
+      &-order-#{$breakpoint}-9 { order: 9; }
+      &-order-#{$breakpoint}-10 { order: 10; }
+      &-order-#{$breakpoint}-11 { order: 11; }
+      &-order-#{$breakpoint}-12 { order: 12; }
+
+      &-als-start-#{$breakpoint} { align-self: flex-start; }
+      &-als-end-#{$breakpoint} { align-self: flex-end; }
+      &-als-center-#{$breakpoint} { align-self: center; }
+      &-als-stretch-#{$breakpoint} { align-self: stretch; }
+      &-als-baseline-#{$breakpoint} { align-self: baseline; }
+
+      &-item-#{$breakpoint} { @include flex-col-width-auto(); }
+      &-item-#{$breakpoint}-1 { @include flex-col-width(1); }
+      &-item-#{$breakpoint}-2 { @include flex-col-width(2); }
+      &-item-#{$breakpoint}-3 { @include flex-col-width(3); }
+      &-item-#{$breakpoint}-4 { @include flex-col-width(4); }
+      &-item-#{$breakpoint}-5 { @include flex-col-width(5); }
+      &-item-#{$breakpoint}-6 { @include flex-col-width(6); }
+      &-item-#{$breakpoint}-7 { @include flex-col-width(7); }
+      &-item-#{$breakpoint}-8 { @include flex-col-width(8); }
+      &-item-#{$breakpoint}-9 { @include flex-col-width(9); }
+      &-item-#{$breakpoint}-10 { @include flex-col-width(10); }
+      &-item-#{$breakpoint}-11 { @include flex-col-width(11); }
+      &-item-#{$breakpoint}-12 { @include flex-col-width(12); }
+
+      &-item-#{$breakpoint}-a { @include flex-col-width-alt(1); }
+      &-item-#{$breakpoint}-b { @include flex-col-width-alt(2); }
+      &-item-#{$breakpoint}-c { @include flex-col-width-alt(3); }
+      &-item-#{$breakpoint}-d { @include flex-col-width-alt(4); }
+      &-item-#{$breakpoint}-e { @include flex-col-width-alt(6); }
+      &-item-#{$breakpoint}-f { @include flex-col-width-alt(7); }
+      &-item-#{$breakpoint}-g { @include flex-col-width-alt(8); }
+      &-item-#{$breakpoint}-h { @include flex-col-width-alt(9); }
+
+      &-basis-#{$breakpoint}-1 { @include basis-col-width(1); }
+      &-basis-#{$breakpoint}-2 { @include basis-col-width(2); }
+      &-basis-#{$breakpoint}-3 { @include basis-col-width(3); }
+      &-basis-#{$breakpoint}-4 { @include basis-col-width(4); }
+      &-basis-#{$breakpoint}-5 { @include basis-col-width(5); }
+      &-basis-#{$breakpoint}-6 { @include basis-col-width(6); }
+      &-basis-#{$breakpoint}-7 { @include basis-col-width(7); }
+      &-basis-#{$breakpoint}-8 { @include basis-col-width(8); }
+      &-basis-#{$breakpoint}-9 { @include basis-col-width(9); }
+      &-basis-#{$breakpoint}-10 { @include basis-col-width(10); }
+      &-basis-#{$breakpoint}-11 { @include basis-col-width(11); }
+      &-basis-#{$breakpoint}-12 { @include basis-col-width(12); }
+
+      &-grow-#{$breakpoint} { flex-grow: 1; }
+      &-grow-no-#{$breakpoint} { flex-grow: 0; }
+      &-shrink-#{$breakpoint} { flex-shrink: 1; }
+      &-shrink-no-#{$breakpoint} { flex-shrink: 0; }
+    }
+  }
+}

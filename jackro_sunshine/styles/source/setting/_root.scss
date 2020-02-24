@@ -1,0 +1,38 @@
+// Sunshine
+// Scalable and Maintainable Architecture.
+//
+// Author:   Jack Ryan Oracoy
+// Website:  https://jackryanoracoy.github.io
+// Email:    jackryanoracoy@gmail.com
+// URL:      https://github.com/jackryanoracoy/sunshine
+// License:  https://github.com/jackryanoracoy/sunshine/blob/master/LICENSE.txt
+
+/*--------------------------------------------------------------
+ Custom Properties (CSS Varialbles)
+--------------------------------------------------------------*/
+
+:root {
+
+  /* theme color */
+  @each $color, $value in $theme-colors {
+    --#{$color}: #{$value};
+  }
+
+  /* color */
+  @each $color, $value in $colors {
+    --#{$color}: #{$value};
+  }
+
+  /* grey */
+  @each $shade, $value in $greys {
+    --grey-#{$shade}: #{$value};
+  }
+
+  /* Transition */
+  --transition: #{inspect($transition)};
+
+  /* font-family */
+  --font-family-sans-serif: #{inspect($font-primary)};
+  --font-family-sans-serif-condensed: #{inspect($font-secondary)};
+  --font-family-monospace: #{inspect($monospace)};
+}

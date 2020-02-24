@@ -1,0 +1,64 @@
+// Sunshine
+// Scalable and Maintainable Architecture.
+//
+// Author:   Jack Ryan Oracoy
+// Website:  https://jackryanoracoy.github.io
+// Email:    jackryanoracoy@gmail.com
+// URL:      https://github.com/jackryanoracoy/sunshine
+// License:  https://github.com/jackryanoracoy/sunshine/blob/master/LICENSE.txt
+
+/*--------------------------------------------------
+  List
+--------------------------------------------------*/
+
+.u-list {
+  list-style-type: none;
+
+  &.has-column-1 { column-count: 1; }
+  &.has-column-2 { column-count: 2; }
+  &.has-column-3 { column-count: 3; }
+  &.has-column-4 { column-count: 4; }
+  &.has-column-5 { column-count: 5; }
+  &.has-column-6 { column-count: 6; }
+  &.has-column-7 { column-count: 7; }
+  &.has-column-8 { column-count: 8; }
+  &.has-column-9 { column-count: 9; }
+  &.has-column-10 { column-count: 10; }
+
+  &.has-gap-10 { column-gap: 10px; }
+  &.has-gap-20 { column-gap: 20px; }
+  &.has-gap-30 { column-gap: 30px; }
+  &.has-gap-40 { column-gap: 40px; }
+  &.has-gap-50 { column-gap: 50px; }
+  &.has-gap-60 { column-gap: 60px; }
+  &.has-gap-70 { column-gap: 70px; }
+  &.has-gap-80 { column-gap: 80px; }
+  &.has-gap-90 { column-gap: 90px; }
+  &.has-gap-100 { column-gap: 100px; }
+
+  @each $breakpoint in map-keys($breakpoints) {
+    @include media-breakpoint-min($breakpoint) {
+      &.has-column-#{$breakpoint}-1 { column-count: 1; }
+      &.has-column-#{$breakpoint}-2 { column-count: 2; }
+      &.has-column-#{$breakpoint}-3 { column-count: 3; }
+      &.has-column-#{$breakpoint}-4 { column-count: 4; }
+      &.has-column-#{$breakpoint}-5 { column-count: 5; }
+      &.has-column-#{$breakpoint}-6 { column-count: 6; }
+      &.has-column-#{$breakpoint}-7 { column-count: 7; }
+      &.has-column-#{$breakpoint}-8 { column-count: 8; }
+      &.has-column-#{$breakpoint}-9 { column-count: 9; }
+      &.has-column-#{$breakpoint}-10 { column-count: 10; }
+
+      &.has-gap-#{$breakpoint}-10 { column-gap: 10px; }
+      &.has-gap-#{$breakpoint}-20 { column-gap: 20px; }
+      &.has-gap-#{$breakpoint}-30 { column-gap: 30px; }
+      &.has-gap-#{$breakpoint}-40 { column-gap: 40px; }
+      &.has-gap-#{$breakpoint}-50 { column-gap: 50px; }
+      &.has-gap-#{$breakpoint}-60 { column-gap: 60px; }
+      &.has-gap-#{$breakpoint}-70 { column-gap: 70px; }
+      &.has-gap-#{$breakpoint}-80 { column-gap: 80px; }
+      &.has-gap-#{$breakpoint}-90 { column-gap: 90px; }
+      &.has-gap-#{$breakpoint}-100 { column-gap: 100px; }
+    }
+  }
+}

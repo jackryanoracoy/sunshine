@@ -1,0 +1,317 @@
+// Sunshine
+// Scalable and Maintainable Architecture.
+//
+// Author:   Jack Ryan Oracoy
+// Website:  https://jackryanoracoy.github.io
+// Email:    jackryanoracoy@gmail.com
+// URL:      https://github.com/jackryanoracoy/sunshine
+// License:  https://github.com/jackryanoracoy/sunshine/blob/master/LICENSE.txt
+
+/*--------------------------------------------------
+  Padding
+--------------------------------------------------*/
+
+.u-pad-5 { padding: 5px; }
+.u-pad-10 { padding: 10px; }
+.u-pad-15 { padding: 15px; }
+.u-pad-20 { padding: 20px; }
+.u-pad-25 { padding: 25px; }
+.u-pad-30 { padding: 30px; }
+.u-pad-35 { padding: 35px; }
+.u-pad-40 { padding: 40px; }
+.u-pad-45 { padding: 45px; }
+.u-pad-50 { padding: 50px; }
+.u-pad-55 { padding: 55px; }
+.u-pad-60 { padding: 60px; }
+.u-pad-65 { padding: 65px; }
+.u-pad-70 { padding: 70px; }
+.u-pad-75 { padding: 75px; }
+.u-pad-80 { padding: 80px; }
+.u-pad-85 { padding: 85px; }
+.u-pad-90 { padding: 90px; }
+.u-pad-95 { padding: 95px; }
+.u-pad-100 { padding: 100px; }
+
+.u-pad-top-5 { padding-top: 5px; }
+.u-pad-top-10 { padding-top: 10px; }
+.u-pad-top-15 { padding-top: 15px; }
+.u-pad-top-20 { padding-top: 20px; }
+.u-pad-top-25 { padding-top: 25px; }
+.u-pad-top-30 { padding-top: 30px; }
+.u-pad-top-35 { padding-top: 35px; }
+.u-pad-top-40 { padding-top: 40px; }
+.u-pad-top-45 { padding-top: 45px; }
+.u-pad-top-50 { padding-top: 50px; }
+.u-pad-top-55 { padding-top: 55px; }
+.u-pad-top-60 { padding-top: 60px; }
+.u-pad-top-65 { padding-top: 65px; }
+.u-pad-top-70 { padding-top: 70px; }
+.u-pad-top-75 { padding-top: 75px; }
+.u-pad-top-80 { padding-top: 80px; }
+.u-pad-top-85 { padding-top: 85px; }
+.u-pad-top-90 { padding-top: 90px; }
+.u-pad-top-95 { padding-top: 95px; }
+.u-pad-top-100 { padding-top: 100px; }
+
+.u-pad-right-5 { padding-right: 5px; }
+.u-pad-right-10 { padding-right: 10px; }
+.u-pad-right-15 { padding-right: 15px; }
+.u-pad-right-20 { padding-right: 20px; }
+.u-pad-right-25 { padding-right: 25px; }
+.u-pad-right-30 { padding-right: 30px; }
+.u-pad-right-35 { padding-right: 35px; }
+.u-pad-right-40 { padding-right: 40px; }
+.u-pad-right-45 { padding-right: 45px; }
+.u-pad-right-50 { padding-right: 50px; }
+.u-pad-right-55 { padding-right: 55px; }
+.u-pad-right-60 { padding-right: 60px; }
+.u-pad-right-65 { padding-right: 65px; }
+.u-pad-right-70 { padding-right: 70px; }
+.u-pad-right-75 { padding-right: 75px; }
+.u-pad-right-80 { padding-right: 80px; }
+.u-pad-right-85 { padding-right: 85px; }
+.u-pad-right-90 { padding-right: 90px; }
+.u-pad-right-95 { padding-right: 95px; }
+.u-pad-right-100 { padding-right: 100px; }
+
+.u-pad-bottom-5 { padding-bottom: 5px; }
+.u-pad-bottom-10 { padding-bottom: 10px; }
+.u-pad-bottom-15 { padding-bottom: 15px; }
+.u-pad-bottom-20 { padding-bottom: 20px; }
+.u-pad-bottom-25 { padding-bottom: 25px; }
+.u-pad-bottom-30 { padding-bottom: 30px; }
+.u-pad-bottom-35 { padding-bottom: 35px; }
+.u-pad-bottom-40 { padding-bottom: 40px; }
+.u-pad-bottom-45 { padding-bottom: 45px; }
+.u-pad-bottom-50 { padding-bottom: 50px; }
+.u-pad-bottom-55 { padding-bottom: 55px; }
+.u-pad-bottom-60 { padding-bottom: 60px; }
+.u-pad-bottom-65 { padding-bottom: 65px; }
+.u-pad-bottom-70 { padding-bottom: 70px; }
+.u-pad-bottom-75 { padding-bottom: 75px; }
+.u-pad-bottom-80 { padding-bottom: 80px; }
+.u-pad-bottom-85 { padding-bottom: 85px; }
+.u-pad-bottom-90 { padding-bottom: 90px; }
+.u-pad-bottom-95 { padding-bottom: 95px; }
+.u-pad-bottom-100 { padding-bottom: 100px; }
+
+.u-pad-left-5 { padding-left: 5px; }
+.u-pad-left-10 { padding-left: 10px; }
+.u-pad-left-15 { padding-left: 15px; }
+.u-pad-left-20 { padding-left: 20px; }
+.u-pad-left-25 { padding-left: 25px; }
+.u-pad-left-30 { padding-left: 30px; }
+.u-pad-left-35 { padding-left: 35px; }
+.u-pad-left-40 { padding-left: 40px; }
+.u-pad-left-45 { padding-left: 45px; }
+.u-pad-left-50 { padding-left: 50px; }
+.u-pad-left-55 { padding-left: 55px; }
+.u-pad-left-60 { padding-left: 60px; }
+.u-pad-left-65 { padding-left: 65px; }
+.u-pad-left-70 { padding-left: 70px; }
+.u-pad-left-75 { padding-left: 75px; }
+.u-pad-left-80 { padding-left: 80px; }
+.u-pad-left-85 { padding-left: 85px; }
+.u-pad-left-90 { padding-left: 90px; }
+.u-pad-left-95 { padding-left: 95px; }
+.u-pad-left-100 { padding-left: 100px; }
+
+.u-pad-ver-5 { padding-top: 5px; padding-bottom: 5px; }
+.u-pad-ver-10 { padding-top: 10px; padding-bottom: 10px; }
+.u-pad-ver-15 { padding-top: 15px; padding-bottom: 15px; }
+.u-pad-ver-20 { padding-top: 20px; padding-bottom: 20px; }
+.u-pad-ver-25 { padding-top: 25px; padding-bottom: 25px; }
+.u-pad-ver-30 { padding-top: 30px; padding-bottom: 30px; }
+.u-pad-ver-35 { padding-top: 35px; padding-bottom: 35px; }
+.u-pad-ver-40 { padding-top: 40px; padding-bottom: 40px; }
+.u-pad-ver-45 { padding-top: 45px; padding-bottom: 45px; }
+.u-pad-ver-50 { padding-top: 50px; padding-bottom: 50px; }
+.u-pad-ver-55 { padding-top: 55px; padding-bottom: 55px; }
+.u-pad-ver-60 { padding-top: 60px; padding-bottom: 60px; }
+.u-pad-ver-65 { padding-top: 65px; padding-bottom: 65px; }
+.u-pad-ver-70 { padding-top: 70px; padding-bottom: 70px; }
+.u-pad-ver-75 { padding-top: 75px; padding-bottom: 75px; }
+.u-pad-ver-80 { padding-top: 80px; padding-bottom: 80px; }
+.u-pad-ver-85 { padding-top: 85px; padding-bottom: 85px; }
+.u-pad-ver-90 { padding-top: 90px; padding-bottom: 90px; }
+.u-pad-ver-95 { padding-top: 95px; padding-bottom: 95px; }
+.u-pad-ver-100 { padding-top: 100px; padding-bottom: 100px; }
+
+.u-pad-hor-5 { padding-right: 5px; padding-left: 5px; }
+.u-pad-hor-10 { padding-right: 10px; padding-left: 10px; }
+.u-pad-hor-15 { padding-right: 15px; padding-left: 15px; }
+.u-pad-hor-20 { padding-right: 20px; padding-left: 20px; }
+.u-pad-hor-25 { padding-right: 25px; padding-left: 25px; }
+.u-pad-hor-30 { padding-right: 30px; padding-left: 30px; }
+.u-pad-hor-35 { padding-right: 35px; padding-left: 35px; }
+.u-pad-hor-40 { padding-right: 40px; padding-left: 40px; }
+.u-pad-hor-45 { padding-right: 45px; padding-left: 45px; }
+.u-pad-hor-50 { padding-right: 50px; padding-left: 50px; }
+.u-pad-hor-55 { padding-right: 55px; padding-left: 55px; }
+.u-pad-hor-60 { padding-right: 60px; padding-left: 60px; }
+.u-pad-hor-65 { padding-right: 65px; padding-left: 65px; }
+.u-pad-hor-70 { padding-right: 70px; padding-left: 70px; }
+.u-pad-hor-75 { padding-right: 75px; padding-left: 75px; }
+.u-pad-hor-80 { padding-right: 80px; padding-left: 80px; }
+.u-pad-hor-85 { padding-right: 85px; padding-left: 85px; }
+.u-pad-hor-90 { padding-right: 90px; padding-left: 90px; }
+.u-pad-hor-95 { padding-right: 95px; padding-left: 95px; }
+.u-pad-hor-100 { padding-right: 100px; padding-left: 100px; }
+
+@each $breakpoint in map-keys($breakpoints) {
+  @include media-breakpoint-min($breakpoint) {
+    .u-pad-#{$breakpoint}-0 { padding: 0; }
+    .u-pad-#{$breakpoint}-5 { padding: 5px; }
+    .u-pad-#{$breakpoint}-10 { padding: 10px; }
+    .u-pad-#{$breakpoint}-15 { padding: 15px; }
+    .u-pad-#{$breakpoint}-20 { padding: 20px; }
+    .u-pad-#{$breakpoint}-25 { padding: 25px; }
+    .u-pad-#{$breakpoint}-30 { padding: 30px; }
+    .u-pad-#{$breakpoint}-35 { padding: 35px; }
+    .u-pad-#{$breakpoint}-40 { padding: 40px; }
+    .u-pad-#{$breakpoint}-45 { padding: 45px; }
+    .u-pad-#{$breakpoint}-50 { padding: 50px; }
+    .u-pad-#{$breakpoint}-55 { padding: 55px; }
+    .u-pad-#{$breakpoint}-60 { padding: 60px; }
+    .u-pad-#{$breakpoint}-65 { padding: 65px; }
+    .u-pad-#{$breakpoint}-70 { padding: 70px; }
+    .u-pad-#{$breakpoint}-75 { padding: 75px; }
+    .u-pad-#{$breakpoint}-80 { padding: 80px; }
+    .u-pad-#{$breakpoint}-85 { padding: 85px; }
+    .u-pad-#{$breakpoint}-90 { padding: 90px; }
+    .u-pad-#{$breakpoint}-95 { padding: 95px; }
+    .u-pad-#{$breakpoint}-100 { padding: 100px; }
+
+    .u-pad-top-#{$breakpoint}-0 { padding-top: 0; }
+    .u-pad-top-#{$breakpoint}-5 { padding-top: 5px; }
+    .u-pad-top-#{$breakpoint}-10 { padding-top: 10px; }
+    .u-pad-top-#{$breakpoint}-15 { padding-top: 15px; }
+    .u-pad-top-#{$breakpoint}-20 { padding-top: 20px; }
+    .u-pad-top-#{$breakpoint}-25 { padding-top: 25px; }
+    .u-pad-top-#{$breakpoint}-30 { padding-top: 30px; }
+    .u-pad-top-#{$breakpoint}-35 { padding-top: 35px; }
+    .u-pad-top-#{$breakpoint}-40 { padding-top: 40px; }
+    .u-pad-top-#{$breakpoint}-45 { padding-top: 45px; }
+    .u-pad-top-#{$breakpoint}-50 { padding-top: 50px; }
+    .u-pad-top-#{$breakpoint}-55 { padding-top: 55px; }
+    .u-pad-top-#{$breakpoint}-60 { padding-top: 60px; }
+    .u-pad-top-#{$breakpoint}-65 { padding-top: 65px; }
+    .u-pad-top-#{$breakpoint}-70 { padding-top: 70px; }
+    .u-pad-top-#{$breakpoint}-75 { padding-top: 75px; }
+    .u-pad-top-#{$breakpoint}-80 { padding-top: 80px; }
+    .u-pad-top-#{$breakpoint}-85 { padding-top: 85px; }
+    .u-pad-top-#{$breakpoint}-90 { padding-top: 90px; }
+    .u-pad-top-#{$breakpoint}-95 { padding-top: 95px; }
+    .u-pad-top-#{$breakpoint}-100 { padding-top: 100px; }
+
+    .u-pad-right-#{$breakpoint}-0 { padding-right: 0; }
+    .u-pad-right-#{$breakpoint}-5 { padding-right: 5px; }
+    .u-pad-right-#{$breakpoint}-10 { padding-right: 10px; }
+    .u-pad-right-#{$breakpoint}-15 { padding-right: 15px; }
+    .u-pad-right-#{$breakpoint}-20 { padding-right: 20px; }
+    .u-pad-right-#{$breakpoint}-25 { padding-right: 25px; }
+    .u-pad-right-#{$breakpoint}-30 { padding-right: 30px; }
+    .u-pad-right-#{$breakpoint}-35 { padding-right: 35px; }
+    .u-pad-right-#{$breakpoint}-40 { padding-right: 40px; }
+    .u-pad-right-#{$breakpoint}-45 { padding-right: 45px; }
+    .u-pad-right-#{$breakpoint}-50 { padding-right: 50px; }
+    .u-pad-right-#{$breakpoint}-55 { padding-right: 55px; }
+    .u-pad-right-#{$breakpoint}-60 { padding-right: 60px; }
+    .u-pad-right-#{$breakpoint}-65 { padding-right: 65px; }
+    .u-pad-right-#{$breakpoint}-70 { padding-right: 70px; }
+    .u-pad-right-#{$breakpoint}-75 { padding-right: 75px; }
+    .u-pad-right-#{$breakpoint}-80 { padding-right: 80px; }
+    .u-pad-right-#{$breakpoint}-85 { padding-right: 85px; }
+    .u-pad-right-#{$breakpoint}-90 { padding-right: 90px; }
+    .u-pad-right-#{$breakpoint}-95 { padding-right: 95px; }
+    .u-pad-right-#{$breakpoint}-100 { padding-right: 100px; }
+
+    .u-pad-bottom-#{$breakpoint}-0 { padding-bottom: 0; }
+    .u-pad-bottom-#{$breakpoint}-5 { padding-bottom: 5px; }
+    .u-pad-bottom-#{$breakpoint}-10 { padding-bottom: 10px; }
+    .u-pad-bottom-#{$breakpoint}-15 { padding-bottom: 15px; }
+    .u-pad-bottom-#{$breakpoint}-20 { padding-bottom: 20px; }
+    .u-pad-bottom-#{$breakpoint}-25 { padding-bottom: 25px; }
+    .u-pad-bottom-#{$breakpoint}-30 { padding-bottom: 30px; }
+    .u-pad-bottom-#{$breakpoint}-35 { padding-bottom: 35px; }
+    .u-pad-bottom-#{$breakpoint}-40 { padding-bottom: 40px; }
+    .u-pad-bottom-#{$breakpoint}-45 { padding-bottom: 45px; }
+    .u-pad-bottom-#{$breakpoint}-50 { padding-bottom: 50px; }
+    .u-pad-bottom-#{$breakpoint}-55 { padding-bottom: 55px; }
+    .u-pad-bottom-#{$breakpoint}-60 { padding-bottom: 60px; }
+    .u-pad-bottom-#{$breakpoint}-65 { padding-bottom: 65px; }
+    .u-pad-bottom-#{$breakpoint}-70 { padding-bottom: 70px; }
+    .u-pad-bottom-#{$breakpoint}-75 { padding-bottom: 75px; }
+    .u-pad-bottom-#{$breakpoint}-80 { padding-bottom: 80px; }
+    .u-pad-bottom-#{$breakpoint}-85 { padding-bottom: 85px; }
+    .u-pad-bottom-#{$breakpoint}-90 { padding-bottom: 90px; }
+    .u-pad-bottom-#{$breakpoint}-95 { padding-bottom: 95px; }
+    .u-pad-bottom-#{$breakpoint}-100 { padding-bottom: 100px; }
+
+    .u-pad-left-#{$breakpoint}-0 { padding-left: 0; }
+    .u-pad-left-#{$breakpoint}-5 { padding-left: 5px; }
+    .u-pad-left-#{$breakpoint}-10 { padding-left: 10px; }
+    .u-pad-left-#{$breakpoint}-15 { padding-left: 15px; }
+    .u-pad-left-#{$breakpoint}-20 { padding-left: 20px; }
+    .u-pad-left-#{$breakpoint}-25 { padding-left: 25px; }
+    .u-pad-left-#{$breakpoint}-30 { padding-left: 30px; }
+    .u-pad-left-#{$breakpoint}-35 { padding-left: 35px; }
+    .u-pad-left-#{$breakpoint}-40 { padding-left: 40px; }
+    .u-pad-left-#{$breakpoint}-45 { padding-left: 45px; }
+    .u-pad-left-#{$breakpoint}-50 { padding-left: 50px; }
+    .u-pad-left-#{$breakpoint}-55 { padding-left: 55px; }
+    .u-pad-left-#{$breakpoint}-60 { padding-left: 60px; }
+    .u-pad-left-#{$breakpoint}-65 { padding-left: 65px; }
+    .u-pad-left-#{$breakpoint}-70 { padding-left: 70px; }
+    .u-pad-left-#{$breakpoint}-75 { padding-left: 75px; }
+    .u-pad-left-#{$breakpoint}-80 { padding-left: 80px; }
+    .u-pad-left-#{$breakpoint}-85 { padding-left: 85px; }
+    .u-pad-left-#{$breakpoint}-90 { padding-left: 90px; }
+    .u-pad-left-#{$breakpoint}-95 { padding-left: 95px; }
+    .u-pad-left-#{$breakpoint}-100 { padding-left: 100px; }
+
+    .u-pad-ver-#{$breakpoint}-0 { padding-top: 0; padding-bottom: 0; }
+    .u-pad-ver-#{$breakpoint}-5 { padding-top: 5px; padding-bottom: 5px; }
+    .u-pad-ver-#{$breakpoint}-10 { padding-top: 10px; padding-bottom: 10px; }
+    .u-pad-ver-#{$breakpoint}-15 { padding-top: 15px; padding-bottom: 15px; }
+    .u-pad-ver-#{$breakpoint}-20 { padding-top: 20px; padding-bottom: 20px; }
+    .u-pad-ver-#{$breakpoint}-25 { padding-top: 25px; padding-bottom: 25px; }
+    .u-pad-ver-#{$breakpoint}-30 { padding-top: 30px; padding-bottom: 30px; }
+    .u-pad-ver-#{$breakpoint}-35 { padding-top: 35px; padding-bottom: 35px; }
+    .u-pad-ver-#{$breakpoint}-40 { padding-top: 40px; padding-bottom: 40px; }
+    .u-pad-ver-#{$breakpoint}-45 { padding-top: 45px; padding-bottom: 45px; }
+    .u-pad-ver-#{$breakpoint}-50 { padding-top: 50px; padding-bottom: 50px; }
+    .u-pad-ver-#{$breakpoint}-55 { padding-top: 55px; padding-bottom: 55px; }
+    .u-pad-ver-#{$breakpoint}-60 { padding-top: 60px; padding-bottom: 60px; }
+    .u-pad-ver-#{$breakpoint}-65 { padding-top: 65px; padding-bottom: 65px; }
+    .u-pad-ver-#{$breakpoint}-70 { padding-top: 70px; padding-bottom: 70px; }
+    .u-pad-ver-#{$breakpoint}-75 { padding-top: 75px; padding-bottom: 75px; }
+    .u-pad-ver-#{$breakpoint}-80 { padding-top: 80px; padding-bottom: 80px; }
+    .u-pad-ver-#{$breakpoint}-85 { padding-top: 85px; padding-bottom: 85px; }
+    .u-pad-ver-#{$breakpoint}-90 { padding-top: 90px; padding-bottom: 90px; }
+    .u-pad-ver-#{$breakpoint}-95 { padding-top: 95px; padding-bottom: 95px; }
+    .u-pad-ver-#{$breakpoint}-100 { padding-top: 100px; padding-bottom: 100px; }
+
+    .u-pad-hor-#{$breakpoint}-0 { padding-right: 0; padding-left: 0; }
+    .u-pad-hor-#{$breakpoint}-5 { padding-right: 5px; padding-left: 5px; }
+    .u-pad-hor-#{$breakpoint}-10 { padding-right: 10px; padding-left: 10px; }
+    .u-pad-hor-#{$breakpoint}-15 { padding-right: 15px; padding-left: 15px; }
+    .u-pad-hor-#{$breakpoint}-20 { padding-right: 20px; padding-left: 20px; }
+    .u-pad-hor-#{$breakpoint}-25 { padding-right: 25px; padding-left: 25px; }
+    .u-pad-hor-#{$breakpoint}-30 { padding-right: 30px; padding-left: 30px; }
+    .u-pad-hor-#{$breakpoint}-35 { padding-right: 35px; padding-left: 35px; }
+    .u-pad-hor-#{$breakpoint}-40 { padding-right: 40px; padding-left: 40px; }
+    .u-pad-hor-#{$breakpoint}-45 { padding-right: 45px; padding-left: 45px; }
+    .u-pad-hor-#{$breakpoint}-50 { padding-right: 50px; padding-left: 50px; }
+    .u-pad-hor-#{$breakpoint}-55 { padding-right: 55px; padding-left: 55px; }
+    .u-pad-hor-#{$breakpoint}-60 { padding-right: 60px; padding-left: 60px; }
+    .u-pad-hor-#{$breakpoint}-65 { padding-right: 65px; padding-left: 65px; }
+    .u-pad-hor-#{$breakpoint}-70 { padding-right: 70px; padding-left: 70px; }
+    .u-pad-hor-#{$breakpoint}-75 { padding-right: 75px; padding-left: 75px; }
+    .u-pad-hor-#{$breakpoint}-80 { padding-right: 80px; padding-left: 80px; }
+    .u-pad-hor-#{$breakpoint}-85 { padding-right: 85px; padding-left: 85px; }
+    .u-pad-hor-#{$breakpoint}-90 { padding-right: 90px; padding-left: 90px; }
+    .u-pad-hor-#{$breakpoint}-95 { padding-right: 95px; padding-left: 95px; }
+    .u-pad-hor-#{$breakpoint}-100 { padding-right: 100px; padding-left: 100px; }
+  }
+}
