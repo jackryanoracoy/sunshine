@@ -13,4 +13,4 @@
 
 *:focus { outline: 1px dotted $info; }
 
-body:not(.tab-used) *:focus { outline: none; }
+body:not(.js-tab-used) *:focus { outline: none; }

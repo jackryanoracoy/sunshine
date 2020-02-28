@@ -11,6 +11,16 @@
 // IE support for "main"
 document.createElement('main');
 
+// Detect if user is using TAB to navigate
+function handleFirstTab(e) {
+  if (e.keyCode === 9) {
+    document.body.classList.add('is-tab-used');
+    window.removeEventListener('keydown', handleFirstTab);
+  }
+}
+window.addEventListener('keydown', handleFirstTab);
+
+
 // jQuery Stealth Mode
 (function($) {
 
@@ -58,15 +68,6 @@ document.createElement('main');
       $('.l-site-header-navigation').stop().toggleClass('js-show');
     });
   });
-
-  // Detect if user is using TAB to navigate
-  function handleFirstTab(e) {
-    if (e.keyCode === 9) {
-      document.body.classList.add('tab-used');
-      window.removeEventListener('keydown', handleFirstTab);
-    }
-  }
-  window.addEventListener('keydown', handleFirstTab);
 
   // Parallax
   $('.l-parallax-image').each(function() {
