@@ -68,7 +68,7 @@
       </div><!-- End - branding -->
 
       <div class="l-site-header-action">
-        <a class="c-button is-danger" href="#"><i class="fas fa-star"></i><span class="u-hidden-lg-max">&nbsp;CTA Button</span></a>
+        <a class="c-button is-danger" href="#">CTA Button</a>
       </div><!-- End - cta -->
 
       <div class="l-site-header-menu u-hidden-lg-min">

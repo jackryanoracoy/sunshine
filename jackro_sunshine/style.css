@@ -9,7 +9,7 @@
  * License:     The MIT License
  * License URI: https://github.com/jackryanoracoy/sunshine/blob/master/LICENSE.txt
  * Text Domain: sunshine
- * Tags:        ITCSS, BEM, SMACSS, OOCSS, custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+ * Tags:        ITCSS, SMACSS, OOCSS, custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
  */
 
 /*
@@ -54,7 +54,4 @@
 @import "styles/layout.css";
 @import "styles/component.css";
 @import "styles/utility.css";
-
-/* Addon */
-@import "addon/fontawesome/css/all.min.css"
 

@@ -148,7 +148,7 @@ html {
   outline: 1px dotted #00BCD4;
 }
 
-body:not(.tab-used) *:focus {
+body:not(.js-tab-used) *:focus {
   outline: none;
 }
 
@@ -4597,15 +4597,15 @@ pre {
 /*--------------------------------------------------
   Disyplay
 --------------------------------------------------*/
-.u-display-inline {
+.u-inline {
   display: inline;
 }
 
-.u-display-block {
+.u-block {
   display: block;
 }
 
-.u-display-inline-block {
+.u-inline-block {
   display: inline-block;
 }
 
@@ -7853,6 +7853,10 @@ pre {
   margin: auto;
 }
 
+.u-mar-0 {
+  margin: 0;
+}
+
 .u-mar-5 {
   margin: 5px;
 }
@@ -7935,6 +7939,10 @@ pre {
 
 .u-mar-top {
   margin-top: auto;
+}
+
+.u-mar-top-0 {
+  margin-top: 0;
 }
 
 .u-mar-top-5 {
@@ -8021,6 +8029,10 @@ pre {
   margin-right: auto;
 }
 
+.u-mar-right-0 {
+  margin-right: 0;
+}
+
 .u-mar-right-5 {
   margin-right: 5px;
 }
@@ -8103,6 +8115,10 @@ pre {
 
 .u-mar-bottom {
   margin-bottom: auto;
+}
+
+.u-mar-bottom-0 {
+  margin-bottom: 0;
 }
 
 .u-mar-bottom-5 {
@@ -8189,6 +8205,10 @@ pre {
   margin-left: auto;
 }
 
+.u-mar-left-0 {
+  margin-left: 0;
+}
+
 .u-mar-left-5 {
   margin-left: 5px;
 }
@@ -8272,6 +8292,11 @@ pre {
 .u-mar-ver {
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.u-mar-ver-0 {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .u-mar-ver-5 {
@@ -8377,6 +8402,11 @@ pre {
 .u-mar-hor {
   margin-right: auto;
   margin-left: auto;
+}
+
+.u-mar-hor-0 {
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .u-mar-hor-5 {
@@ -11443,10 +11473,10 @@ pre {
   Object-fit
 --------------------------------------------------*/
 .u-object-fit {
-  -o-object-fit: inherit;
-     object-fit: inherit;
   width: 100%;
   height: 100%;
+  -o-object-fit: inherit;
+     object-fit: inherit;
 }
 
 .u-object-fit.is-contain {
@@ -11610,6 +11640,8 @@ pre {
 }
 
 .u-object-fit.is-none {
+  width: auto;
+  height: auto;
   -o-object-fit: none;
      object-fit: none;
   font-family: "object-fit: none;";
@@ -11757,6 +11789,8 @@ pre {
     font-family: "object-fit: scale-down; object-position: left;";
   }
   .u-object-fit.is-none-xs {
+    width: auto;
+    height: auto;
     -o-object-fit: none;
        object-fit: none;
     font-family: "object-fit: none;";
@@ -11905,6 +11939,8 @@ pre {
     font-family: "object-fit: scale-down; object-position: left;";
   }
   .u-object-fit.is-none-sm {
+    width: auto;
+    height: auto;
     -o-object-fit: none;
        object-fit: none;
     font-family: "object-fit: none;";
@@ -12053,6 +12089,8 @@ pre {
     font-family: "object-fit: scale-down; object-position: left;";
   }
   .u-object-fit.is-none-md {
+    width: auto;
+    height: auto;
     -o-object-fit: none;
        object-fit: none;
     font-family: "object-fit: none;";
@@ -12201,6 +12239,8 @@ pre {
     font-family: "object-fit: scale-down; object-position: left;";
   }
   .u-object-fit.is-none-lg {
+    width: auto;
+    height: auto;
     -o-object-fit: none;
        object-fit: none;
     font-family: "object-fit: none;";
@@ -12349,6 +12389,8 @@ pre {
     font-family: "object-fit: scale-down; object-position: left;";
   }
   .u-object-fit.is-none-xl {
+    width: auto;
+    height: auto;
     -o-object-fit: none;
        object-fit: none;
     font-family: "object-fit: none;";
@@ -12358,74 +12400,74 @@ pre {
 /*--------------------------------------------------
   Bordered
 --------------------------------------------------*/
-.u-bordered {
+.u-border {
   position: relative;
   border-width: 1px;
   border-style: solid;
   border-color: #EEEEEE;
 }
 
-.u-bordered.is-hidden {
+.u-border.is-hidden {
   border-style: hidden;
 }
 
-.u-bordered.is-dashed {
+.u-border.is-dashed {
   border-style: dashed;
 }
 
-.u-bordered.is-dotted {
+.u-border.is-dotted {
   border-style: dotted;
 }
 
-.u-bordered.is-double {
+.u-border.is-double {
   border-style: double;
 }
 
-.u-bordered.is-groove {
+.u-border.is-groove {
   border-style: groove;
 }
 
-.u-bordered.is-outset {
+.u-border.is-outset {
   border-style: outset;
 }
 
-.u-bordered.is-inset {
+.u-border.is-inset {
   border-style: inset;
 }
 
-.u-bordered.is-ridge {
+.u-border.is-ridge {
   border-style: ridge;
 }
 
-.u-bordered.is-solid {
+.u-border.is-solid {
   border-style: solid;
 }
 
-.u-bordered.is-top {
+.u-border.is-top {
   border-width: 1px 0 0 0;
 }
 
-.u-bordered.is-right {
+.u-border.is-right {
   border-width: 0 0 0 1px;
 }
 
-.u-bordered.is-bottom {
+.u-border.is-bottom {
   border-width: 0 0 1px 0;
 }
 
-.u-bordered.is-left {
+.u-border.is-left {
   border-width: 0 1px 0 0;
 }
 
-.u-bordered.is-ver {
+.u-border.is-ver {
   border-width: 1px 0;
 }
 
-.u-bordered.is-hor {
+.u-border.is-hor {
   border-width: 0 1px;
 }
 
-.u-bordered.is-seq:last-of-type {
+.u-border.is-seq:last-of-type {
   border: none;
 }
 
@@ -13278,6 +13320,38 @@ pre {
 
 .u-overflow-visible {
   overflow: visible;
+}
+
+.u-overflow-x-auto {
+  overflow-x: auto;
+}
+
+.u-overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.u-overflow-x-scroll {
+  overflow-x: scroll;
+}
+
+.u-overflow-x-visible {
+  overflow-x: visible;
+}
+
+.u-overflow-y-auto {
+  overflow-y: auto;
+}
+
+.u-overflow-y-hidden {
+  overflow-y: hidden;
+}
+
+.u-overflow-y-scroll {
+  overflow-y: scroll;
+}
+
+.u-overflow-y-visible {
+  overflow-y: visible;
 }
 
 /*--------------------------------------------------
