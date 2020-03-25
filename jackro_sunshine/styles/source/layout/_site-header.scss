@@ -70,8 +70,7 @@
       height: $header-height;
     }
 
-    &-branding,
-    &-action {
+    &-branding {
       width: auto;
       max-width: 50%;
     }
@@ -89,16 +88,9 @@
     &.js-active {
       box-shadow: none;
     }
-
-    &-action {
-      position: fixed;
-      right: 10px;
-      bottom: 10px;
-    }
   }
 
   @media print {
     position: absolute;
-    &-action { display: none; }
   }
 }

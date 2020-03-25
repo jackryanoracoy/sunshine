@@ -3461,7 +3461,7 @@
   .l-site-header-content:first-child {
     height: 75px;
   }
-  .l-site-header-branding, .l-site-header-action {
+  .l-site-header-branding {
     width: auto;
     max-width: 50%;
   }
@@ -3478,19 +3478,11 @@
     -webkit-box-shadow: none;
             box-shadow: none;
   }
-  .l-site-header-action {
-    position: fixed;
-    right: 10px;
-    bottom: 10px;
-  }
 }
 
 @media print {
   .l-site-header {
     position: absolute;
-  }
-  .l-site-header-action {
-    display: none;
   }
 }
 

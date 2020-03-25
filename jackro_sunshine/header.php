@@ -37,39 +37,35 @@
     <div class="l-site-header-content u-background-primary l-flex is-jus-spbetween is-alt-center">
 
       <div class="l-site-header-branding">
-        <?php
-        if ( has_custom_logo() ) : the_custom_logo();
-        else :
-        ?>
 
         <a class="c-site-branding" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
           <?php
           if ( is_front_page() && is_home() ) :
           ?>
+
           <h1 class="c-site-branding-title"><?php bloginfo( 'name' ); ?></h1>
+
           <?php
           else :
           ?>
+
           <p class="c-site-branding-title"><?php bloginfo( 'name' ); ?></p>
+
           <?php
           endif;
+
           $jackro_sunshine_description = get_bloginfo( 'description', 'display' );
           if ( $jackro_sunshine_description || is_customize_preview() ) :
           ?>
+
           <p class="sr-only"><?php echo $jackro_sunshine_description; ?></p>
+
           <?php
           endif;
           ?>
         </a><!-- End - site branding -->
 
-        <?php
-        endif;
-        ?>
       </div><!-- End - branding -->
-
-      <div class="l-site-header-action">
-        <a class="c-button is-danger" href="#">CTA Button</a>
-      </div><!-- End - cta -->
 
       <div class="l-site-header-menu u-hidden-lg-min">
         <a class="c-site-menu" href="javascript:void(0)"><span class="c-site-menu-box"><span class="c-site-menu-inner"></span></span></a>
@@ -82,9 +78,9 @@
       <nav class="l-site-header-navigation" role="navigation">
         <?php
         wp_nav_menu( array(
-          'theme_location' => 'menu-1',
-          'menu_class'     => 'c-site-nav',
-          'menu_id'        => 'primary-menu',
+        'theme_location' => 'menu-1',
+        'menu_class'     => 'c-site-nav',
+        'menu_id'        => 'primary-menu',
         ) );
         ?>
       </nav><!-- End - navigation -->
