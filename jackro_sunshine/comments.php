@@ -39,7 +39,7 @@ if ( post_password_required() ) {
 
           <?php the_comments_navigation(); ?>
 
-          <ol class="comment-list">
+          <ol class="c-comment-list">
             <?php
             wp_list_comments( array(
               'style'      => 'ol',
@@ -54,7 +54,9 @@ if ( post_password_required() ) {
           // If comments are closed and there are comments, let's leave a little note, shall we?
           if ( ! comments_open() ) :
           ?>
-          <p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'jackro_sunshine' ); ?></p>
+
+          <p class="c-comment-none"><?php esc_html_e( 'Comments are closed.', 'jackro_sunshine' ); ?></p>
+
           <?php
           endif;
 

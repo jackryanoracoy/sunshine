@@ -8,7 +8,7 @@ Sunshine (Front-end Web Development Boilerplate) - A Scalable and Maintainable A
 Get started with Sunshine, a scalable and maintainable architecture for building responsive, mobile-first web apps or sites.  
 Sunshine helps you build not only fast but scalable and maintainable web apps or sites. With Sunshine you have a package that is built with the combined knowledge and effort of some great developers, from their methodology, codes, packages, etc...  
   
-Ready to kick-start your project using Sunshine? [Read the documentation page](https://jackryanoracoy.github.io/sunshine).  
+Ready to kick-start your project using Sunshine?
 Be sure to have your pages set up with the latest design and development standards. That means using an HTML5 doctype and including a viewport meta tag for proper responsive behaviors. Or you can use our boilerplate.html included in the package.  
   
   
@@ -72,6 +72,9 @@ Sunshine use a handful of media queries to create sensible breakpoints for layou
 These breakpoints are mostly based on minimum viewport widths and allow us to scale up elements as the viewport changes.  
   
 ```
+// Small devices (410px and up)
+@media (min-width: 395px) {...}  
+  
 // Small devices (576px and up)
 @media (min-width: 576px) {...}
 
@@ -121,64 +124,7 @@ setting.css - contains custom properties (css variables), font-face, etc.
 base.css - reset and/or normalize styles, box-sizing definition, etc.  
 utitity.css - utilities and helper classes with ability to override anything.  
 layout.css - specific UI layouts.  
-component.css - specific UI components.  
-  
-Sassy CSS  
-  
-```
-sunshine/
-└── styles/
-    ├── css
-    │   ├── all.css
-    │   ├── all.css.map
-    │   ├── all.min.css
-    │   ├── base.css
-    │   ├── base.css.map
-    │   ├── base.min.css
-    │   ├── component.css
-    │   ├── component.css.map
-    │   ├── component.min.css
-    │   ├── layout.css
-    │   ├── layout.css.map
-    │   ├── layout.min.css
-    │   ├── setting.css
-    │   ├── setting.css.map
-    │   ├── setting.min.css
-    │   ├── utility.css
-    │   ├── utility.css.map
-    │   └── utility.min.css
-    ├── scss
-    │   ├── base
-    │   │   └── *.scss
-    │   ├── component
-    │   │   └── *.scss
-    │   ├── layout
-    │   │   └── *.scss
-    │   ├── setting
-    │   │   └── *.scss
-    │   ├── utility
-    │   │   └── *.scss
-    │   ├── all.scss
-    │   ├── base.scss
-    │   ├── component.scss
-    │   ├── layout.scss
-    │   ├── setting.scss
-    │   └── utility.scss
-    └── style.css
-```
-  
-Basic CSS  
-  
-```
-sunshine/
-└── styles/
-    ├── base.css
-    ├── component.css
-    ├── layout.css
-    ├── setting.css
-    ├── utility.css
-    └── style.css
-```  
+component.css - specific UI components.   
   
 ### Naming Convention 
   

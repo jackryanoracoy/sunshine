@@ -14,7 +14,7 @@ if ( ! function_exists( 'jackro_sunshine_posted_on' ) ) :
   function jackro_sunshine_posted_on() {
     $time_string = '<time class="c-entry-date is-published is-updated" datetime="%1$s">%2$s</time>';
     if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
-      $time_string = '<time class="entry-date is-published" datetime="%1$s">%2$s</time><time class="c-entry-date-updated" datetime="%3$s">%4$s</time>';
+      $time_string = '<time class="c-entry-date is-published" datetime="%1$s">%2$s</time><time class="c-entry-date-updated" datetime="%3$s">%4$s</time>';
     }
 
     $time_string = sprintf( $time_string,
