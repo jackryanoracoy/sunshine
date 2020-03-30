@@ -38,32 +38,30 @@
 
       <div class="l-site-header-branding">
 
-        <a class="c-site-branding" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-          <?php
-          if ( is_front_page() && is_home() ) :
-          ?>
+        <?php
+        if ( is_front_page() && is_home() ) :
+        ?>
 
-          <h1 class="c-site-branding-title"><?php bloginfo( 'name' ); ?></h1>
+        <h1 class="c-site-branding"><a class="c-site-branding-title" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 
-          <?php
-          else :
-          ?>
+        <?php
+        else :
+        ?>
 
-          <p class="c-site-branding-title"><?php bloginfo( 'name' ); ?></p>
+        <p class="c-site-branding"><a class="c-site-branding-title" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 
-          <?php
-          endif;
+        <?php
+        endif;
 
-          $jackro_sunshine_description = get_bloginfo( 'description', 'display' );
-          if ( $jackro_sunshine_description || is_customize_preview() ) :
-          ?>
+        $jackro_sunshine_description = get_bloginfo( 'description', 'display' );
+        if ( $jackro_sunshine_description || is_customize_preview() ) :
+        ?>
 
-          <p class="sr-only"><?php echo $jackro_sunshine_description; ?></p>
+        <p class="sr-only"><?php echo $jackro_sunshine_description; ?></p>
 
-          <?php
-          endif;
-          ?>
-        </a><!-- End - site branding -->
+        <?php
+        endif;
+        ?>
 
       </div><!-- End - branding -->
 
