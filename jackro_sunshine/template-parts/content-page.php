@@ -17,16 +17,16 @@
           the_content();
 
           wp_link_pages( array(
-            'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'jackro_sunshine' ),
+            'before' => '<div class="c-page-links">' . esc_html__( 'Pages:', 'jackro_sunshine' ),
             'after'  => '</div>',
           ) );
           ?>
 
           <?php if ( get_edit_post_link() ) :
           edit_post_link(
-            sprintf( wp_kses( __( 'Edit <span class="screen-reader-text">%s</span>', 'template' ),
+            sprintf( wp_kses( __( 'Edit <span class="sr-only">%s</span> Content', 'jackro_sunshine' ),
             array( 'span' => array( 'class' => array(), ), ) ),
-            get_the_title() ), '<span class="edit-link">', '</span>'
+            get_the_title() ), '<p class="u-mar-top-20 u-text-right">', '</p>', null, 'c-button'
           );
           endif;
           ?>

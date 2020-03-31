@@ -30,7 +30,7 @@
           jackro_sunshine_post_thumbnail();
 
           the_content( sprintf(
-            wp_kses( __( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'template' ),
+            wp_kses( __( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'jackro_sunshine' ),
             array( 'span' => array( 'class' => array(), ), ) ),
             get_the_title() )
           );

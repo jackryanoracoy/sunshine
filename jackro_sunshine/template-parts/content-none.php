@@ -14,7 +14,7 @@
           <?php
           if ( is_home() && current_user_can( 'publish_posts' ) ) :
 
-          printf( '<p>' . wp_kses( __( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'template' ),
+          printf( '<p>' . wp_kses( __( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'jackro_sunshine' ),
           array( 'a' => array( 'href' => array(), ), ) ) . '</p>', esc_url( admin_url( 'post-new.php' ) ) );
 
           elseif ( is_search() ) :
