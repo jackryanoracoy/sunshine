@@ -29,10 +29,10 @@ if ( post_password_required() ) {
             <?php
             $jackro_sunshine_comment_count = get_comments_number();
             if ( '1' === $jackro_sunshine_comment_count ) {
-              printf( esc_html__( 'One thought on &ldquo;%1$s&rdquo;', 'template' ), '<span>' . get_the_title() . '</span>' );
+              printf( esc_html__( 'One thought on &ldquo;%1$s&rdquo;', 'jackro_sunshine' ), '<span>' . get_the_title() . '</span>' );
             } else {
-              printf( esc_html( _nx( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', $template_comment_count, 'comments title', 'template' ) ),
-              number_format_i18n( $template_comment_count ), '<span>' . get_the_title() . '</span>' );
+              printf( esc_html( _nx( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', $jackro_sunshine_comment_count, 'comments title', 'jackro_sunshine' ) ),
+              number_format_i18n( $jackro_sunshine_comment_count ), '<span>' . get_the_title() . '</span>' );
             }
             ?>
           </h2>
@@ -46,7 +46,7 @@ if ( post_password_required() ) {
               'short_ping' => true,
             ) );
             ?>
-          </ol><!-- .comment-list -->
+          </ol><!-- End - comment list -->
 
           <?php
           the_comments_navigation();
