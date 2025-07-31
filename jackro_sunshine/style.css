@@ -49,9 +49,5 @@
  */
 
 
-@import "styles/setting.css";
-@import "styles/base.css";
-@import "styles/layout.css";
-@import "styles/component.css";
-@import "styles/utility.css";
+@import "styles/styles.css";
 

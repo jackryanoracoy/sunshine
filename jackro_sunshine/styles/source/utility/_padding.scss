@@ -7,6 +7,9 @@
 // URL:      https://github.com/jackryanoracoy/sunshine
 // License:  https://github.com/jackryanoracoy/sunshine/blob/master/LICENSE.txt
 
+@use "sass:map";
+@use "../setting" as *;
+
 /*--------------------------------------------------
   Padding
 --------------------------------------------------*/
@@ -158,7 +161,7 @@
 .u-pad-hor-95 { padding-right: 95px; padding-left: 95px; }
 .u-pad-hor-100 { padding-right: 100px; padding-left: 100px; }
 
-@each $breakpoint in map-keys($breakpoints) {
+@each $breakpoint in map.keys($breakpoints) {
   @include media-breakpoint-min($breakpoint) {
     .u-pad-#{$breakpoint}-0 { padding: 0; }
     .u-pad-#{$breakpoint}-5 { padding: 5px; }

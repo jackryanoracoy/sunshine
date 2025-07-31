@@ -7,6 +7,8 @@
 // URL:      https://github.com/jackryanoracoy/sunshine
 // License:  https://github.com/jackryanoracoy/sunshine/blob/master/LICENSE.txt
 
+@use "sass:map";
+
 // Colors
 $primary:               #263238               !default;
 $secondary:             #37474F               !default;
@@ -51,7 +53,7 @@ $white:                 #FFFFFF               !default;
 $black:                 #000000               !default;
 
 $theme-colors: ()                             !default;
-$theme-colors: map-merge( (
+$theme-colors: map.merge( (
   "primary":            $primary,
   "secondary":          $secondary,
   "success":            $success,
@@ -63,7 +65,7 @@ $theme-colors: map-merge( (
 ), $theme-colors );
 
 $colors: ()                                   !default;
-$colors: map-merge( (
+$colors: map.merge( (
   "red":                $red,
   "pink":               $pink,
   "purple":             $purple,
@@ -87,7 +89,7 @@ $colors: map-merge( (
 ), $colors );
 
 $greys: ()                                    !default;
-$greys: map-merge( (
+$greys: map.merge( (
   "50":                 $grey-50,
   "100":                $grey-100,
   "200":                $grey-200,
@@ -101,13 +103,14 @@ $greys: map-merge( (
 ), $greys );
 
 // Breakpoints
-$breakpoints: (
+$breakpoints: ()                              !default;
+$breakpoints: map.merge( (
   "xs":                 410px,
   "sm":                 576px,
   "md":                 768px,
   "lg":                 992px,
   "xl":                 1200px
-)                                             !default;
+), $breakpoints );
 
 // Container
 $container-xs:          395px                 !default;
@@ -117,8 +120,8 @@ $container-lg:          960px                 !default;
 $container-xl:          1140px                !default;
 
 // Column Count
-$colum-count:           12                    !default;
-$colum-count-alt:       10                    !default;
+$column-count:           12                    !default;
+$column-count-alt:       10                    !default;
 
 // Font Size
 $font-nm:               1.6rem                !default;
@@ -167,16 +170,14 @@ $z-depth-2:             0 2px 2px 0 rgba(0, 0, 0, 0.15),
                         0 4px 4px -4px rgba(0, 0, 0, 0.2);
 
 // Font Family
-$open-sans-condensed:   "Open Sans Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-$Robot-condensed:       "Roboto Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
 $noto-sans:             "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-$noto-sans-jp:          "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-$noto-sans-hk:          "Noto Sans HK", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, STXihei, "华文细黑", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+// $roboto-sans:           "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+// $inter-sans:            "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
 $sans-serif:            -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 $monospace:             SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 
 // Default Font Face
 $font-primary:          $noto-sans            !default;
-$font-secondary:        $open-sans-condensed  !default;
+// $font-secondary:        $open-sans-condensed  !default;

@@ -7,6 +7,9 @@
 // URL:      https://github.com/jackryanoracoy/sunshine
 // License:  https://github.com/jackryanoracoy/sunshine/blob/master/LICENSE.txt
 
+@use "sass:map";
+@use "../setting" as *;
+
 /*--------------------------------------------------
   List
 --------------------------------------------------*/
@@ -36,7 +39,7 @@
   &.has-gap-90 { column-gap: 90px; }
   &.has-gap-100 { column-gap: 100px; }
 
-  @each $breakpoint in map-keys($breakpoints) {
+  @each $breakpoint in map.keys($breakpoints) {
     @include media-breakpoint-min($breakpoint) {
       &.has-column-#{$breakpoint}-1 { column-count: 1; }
       &.has-column-#{$breakpoint}-2 { column-count: 2; }

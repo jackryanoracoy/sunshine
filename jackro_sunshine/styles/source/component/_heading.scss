@@ -7,13 +7,15 @@
 // URL:      https://github.com/jackryanoracoy/sunshine
 // License:  https://github.com/jackryanoracoy/sunshine/blob/master/LICENSE.txt
 
+@use '../setting' as *;
+
 /*--------------------------------------------------
   Heading
 --------------------------------------------------*/
 
 .c-heading-above-the-fold,
 .c-heading-section {
-  font-family: $font-secondary;
+  font-family: $font-primary;
 }
 
 .c-heading-above-the-fold {

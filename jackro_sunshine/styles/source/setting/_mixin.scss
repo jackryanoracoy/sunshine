@@ -7,11 +7,15 @@
 // URL:      https://github.com/jackryanoracoy/sunshine
 // License:  https://github.com/jackryanoracoy/sunshine/blob/master/LICENSE.txt
 
+@use "sass:math";
+@use "sass:map";
+@use "../setting/variable" as *;
+
 // Breakpoint (min)
 // @include media-breakpoint-min(sm) {...}
 @mixin media-breakpoint-min($breakpoint) {
-  @if map-has-key($breakpoints, $breakpoint) {
-    $breakpoint-value: map-get($breakpoints, $breakpoint);
+  @if map.has-key($breakpoints, $breakpoint) {
+    $breakpoint-value: map.get($breakpoints, $breakpoint);
     @media (min-width: $breakpoint-value) {
       @content;
     }
@@ -23,8 +27,8 @@
 // Breakpoint (max)
 // @include media-breakpoint-max(sm) {...}
 @mixin media-breakpoint-max($breakpoint) {
-  @if map-has-key($breakpoints, $breakpoint) {
-    $breakpoint-value: map-get($breakpoints, $breakpoint);
+  @if map.has-key($breakpoints, $breakpoint) {
+    $breakpoint-value: map.get($breakpoints, $breakpoint);
     @media (max-width: ($breakpoint-value - 1)) {
       @content;
     }
@@ -36,18 +40,18 @@
 // Breakpoint (mix)
 // @include media-breakpoint-mix(sm, md) {...}
 @mixin media-breakpoint-mix($lower, $upper) {
-  @if map-has-key($breakpoints, $lower) and map-has-key($breakpoints, $upper) {
-    $lower-breakpoint: map-get($breakpoints, $lower);
-    $upper-breakpoint: map-get($breakpoints, $upper);
+  @if map.has-key($breakpoints, $lower) and map.has-key($breakpoints, $upper) {
+    $lower-breakpoint: map.get($breakpoints, $lower);
+    $upper-breakpoint: map.get($breakpoints, $upper);
 
     @media (min-width: $lower-breakpoint) and (max-width: ($upper-breakpoint - 1)) {
       @content;
     }
   } @else {
-    @if (map-has-key($breakpoints, $lower) == false) {
+    @if (map.has-key($breakpoints, $lower) == false) {
       @warn 'Invalid breakpoint (min): #{$lower}.';
     }
-    @if (map-has-key($breakpoints, $upper) == false) {
+    @if (map.has-key($breakpoints, $upper) == false) {
       @warn 'Invalid breakpoint (max): #{$upper}.';
     }
   }
@@ -56,15 +60,13 @@
 // Media Queries
 // div {... @include media-breakpoint-min(md) {...} }
 @mixin media-breakpoint-min($width, $type: min) {
-  @if ($responsive) {
-    @if map-has-key($breakpoints, $width) {
-      $width: map-get($breakpoints, $width);
-      @if $type == max {
-        $width: $width - 1px;
-      }
-      @media (#{$type}-width: $width) {
-        @content;
-      }
+  @if map.has-key($breakpoints, $width) {
+    $width: map.get($breakpoints, $width);
+    @if $type == max {
+      $width: $width - 1px;
+    }
+    @media (#{$type}-width: $width) {
+      @content;
     }
   }
 }
@@ -72,7 +74,7 @@
 // Responsive ratio
 // div { @include responsive-ratio(16,9); }
 @mixin responsive-ratio($x,$y, $pseudo: false) {
-  $padding: unquote( ( $y / $x ) * 100 + '%' );
+  $padding: unquote( math.div( $y, $x ) * 100 + '%' );
   @if $pseudo {
     &:before {
       @include pseudo($pos: relative);
@@ -86,19 +88,19 @@
 
 // Flex Column
 // @include flex-col-width(1)
-@mixin flex-col-width($size, $columns: $colum-count) {
-  flex: 0 0 percentage($size / $columns);
-  max-width: percentage($size / $columns);
+@mixin flex-col-width($size, $columns: $column-count) {
+  flex: 0 0 math.percentage(math.div($size, $columns));
+  max-width: math.percentage(math.div($size, $columns));
 }
 
-@mixin flex-col-width-alt($size, $columns: $colum-count-alt) {
-  flex: 0 0 percentage($size / $columns);
-  max-width: percentage($size / $columns);
+@mixin flex-col-width-alt($size, $columns: $column-count-alt) {
+  flex: 0 0 math.percentage(math.div($size, $columns));
+  max-width: math.percentage(math.div($size, $columns));
 }
 
-@mixin basis-col-width($size, $columns: $colum-count) {
-  flex-basis: percentage($size / $columns);
-  max-width: percentage($size / $columns);
+@mixin basis-col-width($size, $columns: $column-count) {
+  flex-basis: math.percentage(math.div($size, $columns));
+  max-width: math.percentage(math.div($size, $columns));
 }
 
 @mixin flex-col-width-auto() {
@@ -115,8 +117,8 @@
     font-display: auto;
     font-style: normal;
     font-weight: #{$weight};
-    src: url('../assets/fonts/#{$file}.woff2') format('woff2'),
-         url('../assets/fonts/#{$file}.woff') format('woff'),
+    src: url('../assets-renew/fonts/#{$file}.woff2') format('woff2'),
+         url('../assets-renew/fonts/#{$file}.woff') format('woff'),
   }
 }
 

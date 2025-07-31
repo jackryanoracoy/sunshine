@@ -7,6 +7,9 @@
 // URL:      https://github.com/jackryanoracoy/sunshine
 // License:  https://github.com/jackryanoracoy/sunshine/blob/master/LICENSE.txt
 
+@use "sass:math";
+@use '../setting' as *;
+
 /*--------------------------------------------------
   Button
 --------------------------------------------------*/
@@ -21,7 +24,7 @@
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  border-radius: $button-height / 2;
+  border-radius: math.div($button-height, 2);
   background-color: $primary;
   box-shadow: $z-depth-1;
   white-space: nowrap;
@@ -42,7 +45,7 @@
   &.is-large {
     min-width: $button-height-lg;
     line-height: $button-height-lg;
-    border-radius: $button-height-lg / 2;
+    border-radius: math.div($button-height-lg, 2);
     padding: 0 20px;
   }
 

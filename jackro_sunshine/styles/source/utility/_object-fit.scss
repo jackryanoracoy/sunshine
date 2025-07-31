@@ -7,6 +7,9 @@
 // URL:      https://github.com/jackryanoracoy/sunshine
 // License:  https://github.com/jackryanoracoy/sunshine/blob/master/LICENSE.txt
 
+@use "sass:map";
+@use "../setting" as *;
+
 /*--------------------------------------------------
   Object-fit
 --------------------------------------------------*/
@@ -143,7 +146,7 @@
     font-family: "object-fit: none;";
   }
 
-  @each $breakpoint in map-keys($breakpoints) {
+  @each $breakpoint in map.keys($breakpoints) {
     @include media-breakpoint-min($breakpoint) {
       &.is-contain-#{$breakpoint} {
         object-fit: contain;

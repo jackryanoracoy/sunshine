@@ -7,13 +7,16 @@
 // URL:      https://github.com/jackryanoracoy/sunshine
 // License:  https://github.com/jackryanoracoy/sunshine/blob/master/LICENSE.txt
 
+@use "sass:math";
+@use '../setting' as *;
+
 /*--------------------------------------------------
   Section
 --------------------------------------------------*/
 
 .l-section {
-  padding-top: ($section-gutter-ver / 2);
-  padding-bottom: ($section-gutter-ver / 2);
+  padding-top: math.div($section-gutter-ver, 2);
+  padding-bottom: math.div($section-gutter-ver, 2);
   padding-right: $section-gutter-hor;
   padding-left: $section-gutter-hor;
 
@@ -23,8 +26,8 @@
   }
 
   &.has-padding-narrow {
-    padding-top: ($section-gutter-ver / 4);
-    padding-bottom: ($section-gutter-ver / 4);
+    padding-top: math.div($section-gutter-ver, 4);
+    padding-bottom: math.div($section-gutter-ver, 4);
   }
 
   &.has-padding-no { padding: 0 !important; }
@@ -44,8 +47,8 @@
     }
 
     &.has-padding-narrow {
-      padding-top: ($section-gutter-ver / 2);
-      padding-bottom: ($section-gutter-ver / 2);
+      padding-top: math.div($section-gutter-ver, 2);
+      padding-bottom: math.div($section-gutter-ver, 2);
     }
   }
 }

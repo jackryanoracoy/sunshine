@@ -7,6 +7,9 @@
 // URL:      https://github.com/jackryanoracoy/sunshine
 // License:  https://github.com/jackryanoracoy/sunshine/blob/master/LICENSE.txt
 
+@use "sass:map";
+@use "../setting" as *;
+
 /*--------------------------------------------------
   Typography
 --------------------------------------------------*/
@@ -40,7 +43,7 @@
 .u-white-space-normal { white-space: normal; }
 .u-white-space-nowrap { white-space: nowrap; }
 
-@each $breakpoint in map-keys($breakpoints) {
+@each $breakpoint in map.keys($breakpoints) {
   @include media-breakpoint-min($breakpoint) {
     .u-text-center-#{$breakpoint} { text-align: center; }
     .u-text-justify-#{$breakpoint} { text-align: justify; }

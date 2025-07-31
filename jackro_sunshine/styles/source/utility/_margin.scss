@@ -7,6 +7,9 @@
 // URL:      https://github.com/jackryanoracoy/sunshine
 // License:  https://github.com/jackryanoracoy/sunshine/blob/master/LICENSE.txt
 
+@use "sass:map";
+@use "../setting" as *;
+
 /*--------------------------------------------------
   Margin
 --------------------------------------------------*/
@@ -172,7 +175,7 @@
 .u-mar-hor-95 { margin-right: 95px; margin-left: 95px; }
 .u-mar-hor-100 { margin-right: 100px; margin-left: 100px; }
 
-@each $breakpoint in map-keys($breakpoints) {
+@each $breakpoint in map.keys($breakpoints) {
   @include media-breakpoint-min($breakpoint) {
     .u-mar-#{$breakpoint} { margin: auto; }
     .u-mar-#{$breakpoint}-0 { margin: 0; }

@@ -7,6 +7,9 @@
 // URL:      https://github.com/jackryanoracoy/sunshine
 // License:  https://github.com/jackryanoracoy/sunshine/blob/master/LICENSE.txt
 
+@use "sass:map";
+@use '../setting' as *;
+
 /*--------------------------------------------------
   Flex
 --------------------------------------------------*/
@@ -119,7 +122,7 @@
   &-shrink { flex-shrink: 1; }
   &-shrink-no { flex-shrink: 0; }
 
-  @each $breakpoint in map-keys($breakpoints) {
+  @each $breakpoint in map.keys($breakpoints) {
     @include media-breakpoint-min($breakpoint) {
       &.is-row-wrp-#{$breakpoint} { flex-flow: row wrap; }
       &.is-row-wrp-no-#{$breakpoint} { flex-flow: row nowrap; }
