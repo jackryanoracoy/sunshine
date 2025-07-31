@@ -17,3 +17,11 @@
 @include font-face("Noto Sans", Noto-Sans, 400);
 @include font-face("Noto Sans", Noto-Sans-Bold, 700);
 
+/*--------------------------------------------------------------
+ font-face Condensed
+--------------------------------------------------------------*/
+
+// Open Sans Condensed
+@include font-face("Open Sans Condensed", Open-Sans-Condensed-Light, 300);
+@include font-face("Open Sans Condensed", Open-Sans-Condensed-Bold, 700);
+
